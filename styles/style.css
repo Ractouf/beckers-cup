@@ -15,6 +15,7 @@
 }
 
 #logo {
+    margin-top: 15rem;
     width: 50%;
     height: 50%;
 }
@@ -115,6 +116,14 @@ main {
         gap: 40rem;
     }
 }
+
+@media (max-width: 700px) {
+    #logo {
+        width: 75%;
+        height: 75%;
+    }
+}
+
 #image-viewer {
     position: fixed;
     top: 0;
