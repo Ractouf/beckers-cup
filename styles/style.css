@@ -15,9 +15,9 @@
 }
 
 #logo {
-    margin-top: 15rem;
-    width: 50%;
-    height: 50%;
+    margin-top: 5rem;
+    width: 75%;
+    height: 75%;
 }
 
 main {
@@ -117,11 +117,11 @@ main {
     }
 }
 
-@media (max-width: 700px) {
+@media (min-width: 500px) {
     #logo {
-        margin-top: 5rem;
-        width: 75%;
-        height: 75%;
+        margin-top: 15rem;
+        width: 50%;
+        height: 50%;
     }
 }
 
