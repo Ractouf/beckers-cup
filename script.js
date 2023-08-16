@@ -106,8 +106,49 @@ function throttle(cb, delay = 1000) {
     }
 }
 
-setInterval(() => {
-    const rightHandle = document.querySelector(".right-handle");
+let intervalID;
+function startCarousel() {
+    intervalID = setInterval(() => {
+        const rightHandle = document.querySelector(".right-handle");
 
-    rightHandle.dispatchEvent(new MouseEvent("click"));
-}, 5000);
+        rightHandle.dispatchEvent(new MouseEvent("click"));
+    }, 5000);
+}
+
+startCarousel();
+
+const sliderImages = document.querySelectorAll("#slider > img");
+const imageViewer = document.getElementById("image-viewer");
+const largeImage = document.getElementById("large-image");
+const closeButton = document.getElementById("close-button");
+
+sliderImages.forEach((image, index) => {
+    image.addEventListener("click", () => {
+        showLargeImage(image.src, index);
+    });
+});
+
+function showLargeImage(src, index) {
+    largeImage.src = src;
+    clearInterval(intervalID);
+    imageViewer.classList.remove("invisible");
+    document.body.style.overflow = "hidden";
+    closeButton.focus();
+}
+
+// Close the large image viewer
+function closeImageViewer() {
+    startCarousel();
+    imageViewer.classList.add("invisible");
+    document.body.style.overflow = "auto"; // Enable scrolling
+}
+
+// Add click event listener to the close button
+closeButton.addEventListener("click", closeImageViewer);
+
+// Add click event listener to the image viewer to close when clicking outside the image
+imageViewer.addEventListener("click", (event) => {
+    if (event.target === imageViewer) {
+        closeImageViewer();
+    }
+});
