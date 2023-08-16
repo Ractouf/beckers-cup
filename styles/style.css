@@ -93,7 +93,7 @@ main {
     }
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 950px) {
     main {
         background-image: url("https://media.discordapp.net/attachments/814147584054657026/1141376865500667994/IMG_3433.JPG?width=438&height=657");
     }
