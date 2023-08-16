@@ -100,5 +100,11 @@ main {
 }
 
 .semi {
-    gap: 40rem;
+    gap: 18rem;
+}
+
+@media (min-width: 1280px) {
+    .semi {
+        gap: 40rem;
+    }
 }
