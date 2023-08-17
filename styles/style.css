@@ -21,8 +21,8 @@ main {
 }
 #logo {
     margin-top: 5rem;
-    width: 75% !important;
-    height: 75% !important;
+    width: 75%;
+    height: 75%;
 }
 
 /*tournament bracket*/
@@ -129,7 +129,7 @@ main {
 
 @media (min-width: 500px) {
     #logo {
-        margin-top: 15rem;
+        margin-top: 8rem;
         width: 50%;
         height: 50%;
     }

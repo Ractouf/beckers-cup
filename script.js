@@ -148,3 +148,35 @@ imageViewer.addEventListener("click", (event) => {
         closeImageViewer();
     }
 });
+
+const form = document.querySelector("form");
+
+form.addEventListener("submit", (e) => {
+    e.preventDefault();
+
+    const textArea = document.querySelector("textarea");
+    const arrayOfLines = textArea.value.split("\n");
+    const teamsElements = document.querySelector("#teams").children;
+
+    for (let i = 0; i < 4; i++) {
+        teamsElements[i].textContent = "";
+    }
+
+    arrayOfLines.sort(() => Math.random() - 0.5);
+
+
+    const teamNameInput = document.createElement("input");
+    teamNameInput.setAttribute("placeholder", "Nom équipe");
+    arrayOfLines.forEach((line, index) => {
+        if (line !== "") {
+            const playerName = document.createElement("p");
+            playerName.textContent = line;
+            console.log(playerName)
+            teamsElements[index % 4].append(playerName);
+        }
+    });
+
+    for (let i = 0; i < 4; i++) {
+        teamsElements[i].append(teamNameInput.cloneNode());
+    }
+});
