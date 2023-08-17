@@ -34,7 +34,7 @@ main {
 }
 
 /*image carousel*/
-.header {
+.header, form, #teams {
     padding: 1rem calc(var(--img-gap) * 2 + var(--handle-size));
 }
 #container {
@@ -115,6 +115,8 @@ main {
     cursor: pointer;
     border-radius: 5px;
 }
+
+/*team maker*/
 
 /*Media queries*/
 @media (max-width: 1000px) {
