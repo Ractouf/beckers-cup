@@ -134,8 +134,12 @@ main {
     }
 }
 
+
+.semi {
+    gap: 24rem;
+}
 @media (min-width: 1280px) {
     .semi {
-        gap: 36rem;
+        gap: 30rem;
     }
 }
