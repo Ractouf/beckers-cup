@@ -12,65 +12,119 @@
 
     <body>
         <main class = "h-screen bg-no-repeat bg-cover bg-center flex items-center justify-center">
-            <a href = "#galerie" class = "flex items-center justify-center">
+            <a href = "#bracket" class = "flex items-center justify-center">
                 <img id = "logo" src = "https://media.discordapp.net/attachments/814147584054657026/1141409007781822555/cup.png?width=547&height=676" alt = "logo">
             </a>
         </main>
 
-        <section>
+        <div id = "bracket" class = "pb-20 bg-center bg-no-repeat bg-cover">
             <div class = "header">
-                <h3 class = "text-4xl font-bold">Edition 2023</h3>
+                <h3 class = "text-4xl text-white font-bold">Tournoi 2023</h3>
             </div>
 
-            <div id = "bracket" class = "py-20 bg-center bg-no-repeat bg-cover">
-                <section class = "flex flex-col tournament gap-10 xl:gap-20">
-                    <div class = "flex justify-center winner">
-                        <div class = "flex flex-col justify-center items-center text-center border-2 border-black bg-white w-24 h-16 lg:w-40 lg:h-32">
+            <section class = "flex flex-col tournament gap-10 xl:gap-20">
+                <div class = "flex justify-center winner">
+                    <div class="flex flex-row border-2 border-black">
+                        <div class="bg-gray-400 text-white flex justify-center items-center w-8">
+                            <div class="transform rotate-90">
+                                <p>FINALE</p>
+                            </div>
+                        </div>
+
+                        <div class="flex flex-col justify-center items-center text-center bg-white w-24 h-16 lg:w-40 lg:h-32">
+                            <p>?</p>
+                            <p>0 - 0</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class = "flex justify-center semi gap-96">
+                    <div class="flex flex-row border-2 border-black">
+                        <div class="bg-gray-400 text-white flex justify-center items-center w-8">
+                            <div class="transform rotate-90">
+                                <p>DEMI</p>
+                            </div>
+                        </div>
+
+                        <div class="flex flex-col justify-center items-center text-center bg-white w-24 h-16 lg:w-40 lg:h-32">
                             <p>?</p>
                             <p>0 - 0</p>
                         </div>
                     </div>
 
-                    <div class = "flex justify-center semi">
-                        <div class = "flex flex-col justify-center items-center text-center border-2 border-black bg-white w-24 h-16 lg:w-40 lg:h-32">
-                            <p>?</p>
-                            <p>0 - 0</p>
+                    <div class="flex flex-row border-2 border-black">
+                        <div class="bg-gray-400 text-white flex justify-center items-center w-8">
+                            <div class="transform rotate-90">
+                                <p>DEMI</p>
+                            </div>
                         </div>
 
-                        <div class = "flex flex-col justify-center items-center text-center border-2 border-black bg-white w-24 h-16 lg:w-40 lg:h-32">
+                        <div class="flex flex-col justify-center items-center text-center bg-white w-24 h-16 lg:w-40 lg:h-32">
                             <p>?</p>
                             <p>0 - 0</p>
                         </div>
                     </div>
+                </div>
 
-                    <div class = "flex justify-center quarter gap-24 xl:gap-80">
-                        <div class = "flex gap-24 xl:gap-40">
-                            <div class = "flex flex-col justify-center items-center text-center border-2 border-black bg-white w-24 h-16 lg:w-40 lg:h-32">
-                                <p>équipe 1</p>
-                                <p>0 - 0</p>
+                <div class = "flex justify-center quarter gap-32 xl:gap-48">
+                    <div class = "flex gap-32 xl:gap-48">
+                        <div class="flex flex-row border-2 border-black">
+                            <div class="bg-gray-400 text-white flex justify-center items-center w-8">
+                                <div class="transform rotate-90">
+                                    <p>QUART</p>
+                                </div>
                             </div>
 
-                            <div class = "flex flex-col justify-center items-center text-center border-2 border-black bg-white w-24 h-16 lg:w-40 lg:h-32">
-                                <p>équipe 2</p>
+                            <div class="flex flex-col justify-center items-center text-center bg-white w-24 h-16 lg:w-40 lg:h-32">
+                                <p>?</p>
                                 <p>0 - 0</p>
                             </div>
                         </div>
 
-                        <div class = "flex gap-24 xl:gap-40">
-                            <div class = "flex flex-col justify-center items-center text-center border-2 border-black bg-white w-24 h-16 lg:w-40 lg:h-32">
-                                <p>équipe 3</p>
-                                <p>0 - 0</p>
+                        <div class="flex flex-row border-2 border-black">
+                            <div class="bg-gray-400 text-white flex justify-center items-center w-8">
+                                <div class="transform rotate-90">
+                                    <p>QUART</p>
+                                </div>
                             </div>
 
-                            <div class = "flex flex-col justify-center items-center text-center border-2 border-black bg-white w-24 h-16 lg:w-40 lg:h-32">
-                                <p>équipe 4</p>
+                            <div class="flex flex-col justify-center items-center text-center bg-white w-24 h-16 lg:w-40 lg:h-32">
+                                <p>?</p>
                                 <p>0 - 0</p>
                             </div>
                         </div>
                     </div>
-                </section>
-            </div>
-        </section>
+
+                    <div class = "flex gap-32 xl:gap-48">
+                        <div class="flex flex-row border-2 border-black">
+                            <div class="bg-gray-400 text-white flex justify-center items-center w-8">
+                                <div class="transform rotate-90">
+                                    <p>QUART</p>
+                                </div>
+                            </div>
+
+                            <div class="flex flex-col justify-center items-center text-center bg-white w-24 h-16 lg:w-40 lg:h-32">
+                                <p>?</p>
+                                <p>0 - 0</p>
+                            </div>
+                        </div>
+
+                        <div class="flex flex-row border-2 border-black">
+                            <div class="bg-gray-400 text-white flex justify-center items-center w-8">
+                                <div class="transform rotate-90">
+                                    <p>QUART</p>
+                                </div>
+                            </div>
+
+                            <div class="flex flex-col justify-center items-center text-center bg-white w-24 h-16 lg:w-40 lg:h-32">
+                                <p>?</p>
+                                <p>0 - 0</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
 
         <section id = "galerie" class = "bg-gray-300">
             <div class = "header">

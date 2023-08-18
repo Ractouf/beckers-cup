@@ -29,9 +29,6 @@ main {
 #bracket {
     background-image: url("https://media.discordapp.net/attachments/814147584054657026/1141401688243187712/IMG_3451.JPG?width=1202&height=676");
 }
-.semi {
-    gap: 18rem;
-}
 
 /*image carousel*/
 .header, form, #teams {
@@ -139,6 +136,6 @@ main {
 
 @media (min-width: 1280px) {
     .semi {
-        gap: 40rem;
+        gap: 36rem;
     }
 }
