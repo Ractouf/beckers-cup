@@ -142,3 +142,7 @@ main {
 .bg-green-img {
     background-color: #9CAB47;
 }
+
+.sub-bracket {
+    gap: 30rem;
+}

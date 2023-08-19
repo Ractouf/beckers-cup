@@ -114,7 +114,7 @@ function startCarousel() {
         rightHandle.dispatchEvent(new MouseEvent("click"));
     }, 5000);
 }
-//startCarousel();
+startCarousel();
 
 const sliderImages = document.querySelectorAll("#slider > img");
 const imageViewer = document.getElementById("image-viewer");
