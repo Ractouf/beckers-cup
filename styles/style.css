@@ -144,5 +144,11 @@ main {
 }
 
 .sub-bracket {
-    gap: 30rem;
+    gap: 24rem;
+}
+
+@media (min-width: 1280px) {
+    .sub-bracket {
+        gap: 30rem;
+    }
 }
