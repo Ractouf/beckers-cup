@@ -143,3 +143,31 @@ main {
         gap: 30rem;
     }
 }
+
+.bg-green-img-1 {
+    background-color: #8C9D1F;
+}
+
+.bg-green-img-2 {
+    background-color: #9CAB47;
+}
+
+.bg-green-img-3 {
+    background-color: #A4B53A;
+}
+
+.bg-green-img-4 {
+    background-color: #C3CA6D;
+}
+
+.bg-green-img-5 {
+    background-color: #697400;
+}
+
+.bg-green-img-6 {
+    background-color: #576500;
+}
+
+.bg-green-img-7 {
+    background-color: #C5D24C;
+}
