@@ -167,6 +167,7 @@ form.addEventListener("submit", (e) => {
 
     const teamNameInput = document.createElement("input");
     teamNameInput.setAttribute("placeholder", "Nom équipe");
+    teamNameInput.classList.add("p-1", "rounded");
     arrayOfLines.forEach((line, index) => {
         if (line !== "") {
             const playerName = document.createElement("p");
