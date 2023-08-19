@@ -117,9 +117,9 @@ main {
 
 /*Media queries*/
 @media (max-width: 1000px) {
-    main {
+    /*main {
         background-image: url("https://media.discordapp.net/attachments/814147584054657026/1141399830170710077/IMG_3450.JPG?width=450&height=676");
-    }
+    }*/
 
     #slider {
         --items-per-screen: 1;
