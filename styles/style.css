@@ -19,11 +19,6 @@
 main {
     background-image: url("https://media.discordapp.net/attachments/814147584054657026/1141375312857411604/IMG_3438.JPG?width=1056&height=657");
 }
-#logo {
-    margin-top: 8rem;
-    width: 50%;
-    height: 50%;
-}
 
 /*tournament bracket*/
 #bracket {
@@ -126,29 +121,10 @@ main {
     }
 }
 
-.semi {
-    gap: 24rem;
-}
-@media (min-width: 1280px) {
-    .semi {
-        gap: 30rem;
-    }
-}
-
 .teammaker {
     background-image: url("https://cdn.discordapp.com/attachments/814147584054657026/1142404270541525082/IMG_3452.jpg");
 }
 
 .bg-green-img {
     background-color: #9CAB47;
-}
-
-.sub-bracket {
-    gap: 24rem;
-}
-
-@media (min-width: 1280px) {
-    .sub-bracket {
-        gap: 30rem;
-    }
 }
