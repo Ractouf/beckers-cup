@@ -32,9 +32,9 @@ const tournoi2023 = `
             </div>
         </div>
 
-        <div class = "flex flex-row gap-32 xl:gap-40">
-            <div class="w-16 xl:w-20 h-2 bg-green-img"></div>
-            <div class="w-16 xl:w-20 h-2 bg-green-img"></div>
+        <div class = "flex flex-row gap-48 xl:gap-60">
+            <div class="w-8 xl:w-10 h-2 bg-green-img"></div>
+            <div class="w-8 xl:w-10 h-2 bg-green-img"></div>
         </div>
 
         <div class="flex flex-row border-2 border-black rounded-md">
@@ -151,9 +151,9 @@ const tournoi2022 = `
             </div>
         </div>
 
-        <div class = "flex flex-row gap-32 xl:gap-40">
-            <div class="w-16 xl:w-20 h-2 bg-red-400"></div>
-            <div class="w-16 xl:w-20 h-2 bg-green-img"></div>
+        <div class = "flex flex-row gap-48 xl:gap-60">
+            <div class="w-8 xl:w-10 h-2 bg-red-400"></div>
+            <div class="w-8 xl:w-10 h-2 bg-green-img"></div>
         </div>
 
         <div class="flex flex-row border-2 border-black rounded-md">
