@@ -3,7 +3,7 @@ const slider = document.querySelector("#slider");
 const tournoi2023 = `
     <div class = "flex justify-center winner">
         <div class="flex flex-row border-2 border-black rounded-md">
-            <div class="bg-green-img text-white flex justify-center items-center w-8 rounded-l">
+            <div class="bg-green-img text-white text-[10px] xl:text-base flex justify-center items-center w-8 rounded-l">
                 <div class="transform -rotate-90">
                     <p>GAGNANTS</p>
                 </div>
@@ -126,7 +126,7 @@ const tournoi2023 = `
 const tournoi2022 = `
     <div class = "flex justify-center winner">
         <div class="flex flex-row border-2 border-black rounded-md">
-            <div class="bg-green-img text-white flex justify-center items-center w-8 rounded-l">
+            <div class="bg-green-img text-white text-[10px] xl:text-base flex justify-center items-center w-8 rounded-l">
                 <div class="transform -rotate-90">
                     <p>GAGNANTS</p>
                 </div>
