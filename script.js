@@ -1,5 +1,265 @@
 const progressBar = document.querySelector("#progress-bar");
 const slider = document.querySelector("#slider");
+const tournoi2023 = `
+    <div class = "flex justify-center winner">
+        <div class="flex flex-row border-2 border-black rounded-md">
+            <div class="bg-green-img text-white flex justify-center items-center w-8 rounded-l">
+                <div class="transform -rotate-90">
+                    <p>GAGNANTS</p>
+                </div>
+            </div>
+
+            <div class="flex flex-col justify-center items-center text-center bg-white rounded-r w-24 h-16 xl:w-32 xl:h-24">
+                <p>?</p>
+                <p>0 - 0</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="flex flex-col justify-center items-center">
+        <div class="w-2 h-6 xl:h-10 bg-gray-500"></div>
+
+        <div class = "flex">
+            <div class="w-16 xl:w-20 h-2 bg-gray-500 translate-x-1"></div>
+            <div class="w-16 xl:w-20 h-2 bg-gray-500 -translate-x-1"></div>
+        </div>
+    </div>
+
+    <div class = "flex justify-center semi gap-[24rem] xl:gap-[30rem]">
+        <div class="flex flex-row border-2 border-black rounded-md">
+            <div class="bg-green-img text-white flex justify-center items-center w-8 rounded-l">
+                <div class="transform -rotate-90">
+                    <p>FINALE</p>
+                </div>
+            </div>
+
+            <div class="flex flex-col justify-center items-center text-center bg-white rounded-r w-24 h-16 xl:w-32 xl:h-24">
+                <p>?</p>
+                <p>0 - 0</p>
+            </div>
+        </div>
+
+        <div class="flex flex-row border-2 border-black rounded-md">
+            <div class="bg-green-img text-white flex justify-center items-center w-8 rounded-l">
+                <div class="transform -rotate-90">
+                    <p>FINALE</p>
+                </div>
+            </div>
+
+            <div class="flex flex-col justify-center items-center text-center bg-white rounded-r w-24 h-16 xl:w-32 xl:h-24">
+                <p>?</p>
+                <p>0 - 0</p>
+            </div>
+        </div>
+    </div>
+
+    <div class = "flex justify-center gap-[24rem] xl:gap-[30rem]">
+        <div class="flex flex-col justify-center items-center">
+            <div class="w-2 h-6 xl:h-10 bg-gray-500"></div>
+
+            <div class = "flex">
+                <div class="w-16 xl:w-20 h-2 bg-gray-500 translate-x-1"></div>
+                <div class="w-16 xl:w-20 h-2 bg-gray-500 -translate-x-1"></div>
+            </div>
+        </div>
+
+        <div class="flex flex-col justify-center items-center">
+            <div class="w-2 h-6 xl:h-10 bg-gray-500"></div>
+
+            <div class = "flex">
+                <div class="w-16 xl:w-20 h-2 bg-gray-500 translate-x-1"></div>
+                <div class="w-16 xl:w-20 h-2 bg-gray-500 -translate-x-1"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class = "flex justify-center quarter gap-32 xl:gap-40">
+        <div class = "flex gap-32 xl:gap-40">
+            <div class="flex flex-row border-2 border-black rounded-md">
+                <div class="bg-green-img text-white flex justify-center items-center w-8 rounded-l">
+                    <div class="transform -rotate-90">
+                        <p>DEMI</p>
+                    </div>
+                </div>
+
+                <div class="flex flex-col justify-center items-center text-center bg-white rounded-r w-24 h-16 xl:w-32 xl:h-24">
+                    <p>?</p>
+                    <p>0 - 0</p>
+                </div>
+            </div>
+
+            <div class="flex flex-row border-2 border-black rounded-md">
+                <div class="bg-green-img text-white flex justify-center items-center w-8 rounded-l">
+                    <div class="transform -rotate-90">
+                        <p>DEMI</p>
+                    </div>
+                </div>
+
+                <div class="flex flex-col justify-center items-center text-center bg-white rounded-r w-24 h-16 xl:w-32 xl:h-24">
+                    <p>?</p>
+                    <p>0 - 0</p>
+                </div>
+            </div>
+        </div>
+
+        <div class = "flex gap-32 xl:gap-40">
+            <div class="flex flex-row border-2 border-black rounded-md">
+                <div class="bg-green-img text-white flex justify-center items-center w-8 rounded-l">
+                    <div class="transform -rotate-90">
+                        <p>DEMI</p>
+                    </div>
+                </div>
+
+                <div class="flex flex-col justify-center items-center text-center bg-white rounded-r w-24 h-16 xl:w-32 xl:h-24">
+                    <p>?</p>
+                    <p>0 - 0</p>
+                </div>
+            </div>
+
+            <div class="flex flex-row border-2 border-black rounded-md">
+                <div class="bg-green-img text-white flex justify-center items-center w-8 rounded-l">
+                    <div class="transform -rotate-90">
+                        <p>DEMI</p>
+                    </div>
+                </div>
+
+                <div class="flex flex-col justify-center items-center text-center bg-white rounded-r w-24 h-16 xl:w-32 xl:h-24">
+                    <p>?</p>
+                    <p>0 - 0</p>
+                </div>
+            </div>
+        </div>
+    </div>`;
+const tournoi2022 = `
+    <div class = "flex justify-center winner">
+        <div class="flex flex-row border-2 border-black rounded-md">
+            <div class="bg-green-img text-white flex justify-center items-center w-8 rounded-l">
+                <div class="transform -rotate-90">
+                    <p>GAGNANTS</p>
+                </div>
+            </div>
+
+            <div class="flex flex-col justify-center items-center text-center bg-white rounded-r w-24 h-16 xl:w-32 xl:h-24">
+                <p>Nom équipe</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="flex flex-col justify-center items-center">
+        <div class="w-2 h-6 xl:h-10 bg-black"></div>
+
+        <div class = "flex">
+            <div class="w-16 xl:w-20 h-2 bg-black translate-x-1 z-10"></div>
+            <div class="w-16 xl:w-20 h-2 bg-gray-500 -translate-x-1"></div>
+        </div>
+    </div>
+
+    <div class = "flex justify-center semi gap-[24rem] xl:gap-[30rem]">
+        <div class="flex flex-row border-2 border-black rounded-md">
+            <div class="bg-green-img text-white flex justify-center items-center w-8 rounded-l">
+                <div class="transform -rotate-90">
+                    <p>FINALE</p>
+                </div>
+            </div>
+
+            <div class="flex flex-col justify-center items-center text-center bg-white rounded-r w-24 h-16 xl:w-32 xl:h-24">
+                <p>Nom équipe</p>
+                <p>14</p>
+            </div>
+        </div>
+
+        <div class="flex flex-row border-2 border-black rounded-md">
+            <div class="bg-green-img text-white flex justify-center items-center w-8 rounded-l">
+                <div class="transform -rotate-90">
+                    <p>FINALE</p>
+                </div>
+            </div>
+
+            <div class="flex flex-col justify-center items-center text-center bg-white rounded-r w-24 h-16 xl:w-32 xl:h-24">
+                <p>Nom équipe</p>
+                <p>5</p>
+            </div>
+        </div>
+    </div>
+
+    <div class = "flex justify-center gap-[24rem] xl:gap-[30rem]">
+        <div class="flex flex-col justify-center items-center">
+            <div class="w-2 h-6 xl:h-10 bg-black"></div>
+
+            <div class = "flex">
+                <div class="w-16 xl:w-20 h-2 bg-black translate-x-1 z-10"></div>
+                <div class="w-16 xl:w-20 h-2 bg-gray-500 -translate-x-1"></div>
+            </div>
+        </div>
+
+        <div class="flex flex-col justify-center items-center">
+            <div class="w-2 h-6 xl:h-10 bg-black"></div>
+
+            <div class = "flex">
+                <div class="w-16 xl:w-20 h-2 bg-gray-500 translate-x-1"></div>
+                <div class="w-16 xl:w-20 h-2 bg-black -translate-x-1"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class = "flex justify-center quarter gap-32 xl:gap-40">
+        <div class = "flex gap-32 xl:gap-40">
+            <div class="flex flex-row border-2 border-black rounded-md">
+                <div class="bg-green-img text-white flex justify-center items-center w-8 rounded-l">
+                    <div class="transform -rotate-90">
+                        <p>DEMI</p>
+                    </div>
+                </div>
+
+                <div class="flex flex-col justify-center items-center text-center bg-white rounded-r w-24 h-16 xl:w-32 xl:h-24">
+                    <p>Nom équipe</p>
+                    <p>13</p>
+                </div>
+            </div>
+
+            <div class="flex flex-row border-2 border-black rounded-md">
+                <div class="bg-green-img text-white flex justify-center items-center w-8 rounded-l">
+                    <div class="transform -rotate-90">
+                        <p>DEMI</p>
+                    </div>
+                </div>
+
+                <div class="flex flex-col justify-center items-center text-center bg-white rounded-r w-24 h-16 xl:w-32 xl:h-24">
+                    <p>Nom équipe</p>
+                    <p>5</p>
+                </div>
+            </div>
+        </div>
+
+        <div class = "flex gap-32 xl:gap-40">
+            <div class="flex flex-row border-2 border-black rounded-md">
+                <div class="bg-green-img text-white flex justify-center items-center w-8 rounded-l">
+                    <div class="transform -rotate-90">
+                        <p>DEMI</p>
+                    </div>
+                </div>
+
+                <div class="flex flex-col justify-center items-center text-center bg-white rounded-r w-24 h-16 xl:w-32 xl:h-24">
+                    <p>Nom équipe</p>
+                    <p>3</p>
+                </div>
+            </div>
+
+            <div class="flex flex-row border-2 border-black rounded-md">
+                <div class="bg-green-img text-white flex justify-center items-center w-8 rounded-l">
+                    <div class="transform -rotate-90">
+                        <p>DEMI</p>
+                    </div>
+                </div>
+
+                <div class="flex flex-col justify-center items-center text-center bg-white rounded-r w-24 h-16 xl:w-32 xl:h-24">
+                    <p>Nom équipe</p>
+                    <p>8</p>
+                </div>
+            </div>
+        </div>
+    </div>`;
+
 
 document.querySelectorAll(".handle").forEach(handle => {
     handle.addEventListener("click", e => {
@@ -76,7 +336,7 @@ function calculateProgressBar(progressBar) {
 
 const throttleProgressBar = throttle(() => {
     calculateProgressBar(document.querySelector("#progress-bar"));
-    }, 250);
+}, 250);
 window.addEventListener("resize", throttleProgressBar);
 
 calculateProgressBar(document.querySelector("#progress-bar"));
@@ -107,6 +367,7 @@ function throttle(cb, delay = 1000) {
 }
 
 let intervalID;
+
 function startCarousel() {
     intervalID = setInterval(() => {
         const rightHandle = document.querySelector(".right-handle");
@@ -114,6 +375,7 @@ function startCarousel() {
         rightHandle.dispatchEvent(new MouseEvent("click"));
     }, 5000);
 }
+
 startCarousel();
 
 const sliderImages = document.querySelectorAll("#slider > img");
@@ -179,5 +441,20 @@ form.addEventListener("submit", (e) => {
 
     for (let i = 0; i < 4; i++) {
         teamsElements[i].append(teamNameInput.cloneNode());
+    }
+});
+
+document.querySelector(".tournoi-select").addEventListener("change", (event) => {
+    const selectedOption = event.target.options[event.target.selectedIndex];
+    const selectedValue = selectedOption.value;
+
+    const tournoi = document.querySelector(".tournament");
+
+    if (selectedValue === "Tournoi 2023") {
+        tournoi.innerHTML = "";
+        tournoi.innerHTML = tournoi2023;
+    } else if (selectedValue === "Tournoi 2022") {
+        tournoi.innerHTML = "";
+        tournoi.innerHTML = tournoi2022;
     }
 });
