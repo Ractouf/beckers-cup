@@ -243,8 +243,6 @@ const tournoi2022 = `
         </div>
     </div>`;
 
-document.querySelector(".tournament").innerHTML = tournoi2023;
-
 document.querySelectorAll(".handle").forEach(handle => {
     handle.addEventListener("click", e => {
         const progressBarItemCount = progressBar.children.length;
@@ -410,35 +408,40 @@ form.addEventListener("submit", (e) => {
 
     arrayOfLines.sort(() => Math.random() - 0.5);
 
-
-    const teamNameInput = document.createElement("input");
-    teamNameInput.setAttribute("placeholder", "Nom équipe");
-    teamNameInput.classList.add("p-1", "rounded");
     arrayOfLines.forEach((line, index) => {
         if (line !== "") {
             const playerName = document.createElement("p");
             playerName.textContent = line;
-            console.log(playerName)
             teamsElements[index % 4].append(playerName);
         }
     });
 
+    const teamNameInput = document.createElement("input");
+    teamNameInput.setAttribute("placeholder", "Nom équipe");
+    teamNameInput.classList.add("p-1", "rounded");
     for (let i = 0; i < 4; i++) {
         teamsElements[i].append(teamNameInput.cloneNode());
     }
 });
 
-document.querySelector(".tournoi-select").addEventListener("change", (event) => {
-    const selectedOption = event.target.options[event.target.selectedIndex];
-    const selectedValue = selectedOption.value;
+const selectElement = document.querySelector("select");
+
+selectElement.addEventListener("change", (event) => {
+    chooseTournament();
+});
+
+document.addEventListener('DOMContentLoaded', chooseTournament);
+
+function chooseTournament() {
+    const selectedOption = selectElement.value;
 
     const tournoi = document.querySelector(".tournament");
 
-    if (selectedValue === "Tournoi 2023") {
+    if (selectedOption === '2023') {
         tournoi.innerHTML = "";
         tournoi.innerHTML = tournoi2023;
-    } else if (selectedValue === "Tournoi 2022") {
+    } else if (selectedOption === '2022') {
         tournoi.innerHTML = "";
         tournoi.innerHTML = tournoi2022;
     }
-});
+}
