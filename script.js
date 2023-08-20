@@ -11,17 +11,16 @@ const tournoi2023 = `
 
             <div class="flex flex-col justify-center items-center text-center bg-white rounded-r w-24 h-16 xl:w-32 xl:h-24">
                 <p>?</p>
-                <p>0 - 0</p>
             </div>
         </div>
     </div>
 
     <div class="flex flex-col justify-center items-center">
-        <div class="w-2 h-6 xl:h-10 bg-gray-500"></div>
+        <div class="w-2 h-6 xl:h-10 bg-green-img"></div>
 
         <div class = "flex">
-            <div class="w-16 xl:w-20 h-2 bg-gray-500 translate-x-1"></div>
-            <div class="w-16 xl:w-20 h-2 bg-gray-500 -translate-x-1"></div>
+            <div class="w-16 xl:w-20 h-2 bg-green-img translate-x-1"></div>
+            <div class="w-16 xl:w-20 h-2 bg-green-img -translate-x-1"></div>
         </div>
     </div>
 
@@ -35,7 +34,6 @@ const tournoi2023 = `
 
             <div class="flex flex-col justify-center items-center text-center bg-white rounded-r w-24 h-16 xl:w-32 xl:h-24">
                 <p>?</p>
-                <p>0 - 0</p>
             </div>
         </div>
 
@@ -48,27 +46,26 @@ const tournoi2023 = `
 
             <div class="flex flex-col justify-center items-center text-center bg-white rounded-r w-24 h-16 xl:w-32 xl:h-24">
                 <p>?</p>
-                <p>0 - 0</p>
             </div>
         </div>
     </div>
 
     <div class = "flex justify-center gap-[24rem] xl:gap-[30rem]">
         <div class="flex flex-col justify-center items-center">
-            <div class="w-2 h-6 xl:h-10 bg-gray-500"></div>
+            <div class="w-2 h-6 xl:h-10 bg-green-img"></div>
 
             <div class = "flex">
-                <div class="w-16 xl:w-20 h-2 bg-gray-500 translate-x-1"></div>
-                <div class="w-16 xl:w-20 h-2 bg-gray-500 -translate-x-1"></div>
+                <div class="w-16 xl:w-20 h-2 bg-green-img translate-x-1"></div>
+                <div class="w-16 xl:w-20 h-2 bg-green-img -translate-x-1"></div>
             </div>
         </div>
 
         <div class="flex flex-col justify-center items-center">
-            <div class="w-2 h-6 xl:h-10 bg-gray-500"></div>
+            <div class="w-2 h-6 xl:h-10 bg-green-img"></div>
 
             <div class = "flex">
-                <div class="w-16 xl:w-20 h-2 bg-gray-500 translate-x-1"></div>
-                <div class="w-16 xl:w-20 h-2 bg-gray-500 -translate-x-1"></div>
+                <div class="w-16 xl:w-20 h-2 bg-green-img translate-x-1"></div>
+                <div class="w-16 xl:w-20 h-2 bg-green-img -translate-x-1"></div>
             </div>
         </div>
     </div>
@@ -84,7 +81,6 @@ const tournoi2023 = `
 
                 <div class="flex flex-col justify-center items-center text-center bg-white rounded-r w-24 h-16 xl:w-32 xl:h-24">
                     <p>?</p>
-                    <p>0 - 0</p>
                 </div>
             </div>
 
@@ -97,7 +93,6 @@ const tournoi2023 = `
 
                 <div class="flex flex-col justify-center items-center text-center bg-white rounded-r w-24 h-16 xl:w-32 xl:h-24">
                     <p>?</p>
-                    <p>0 - 0</p>
                 </div>
             </div>
         </div>
@@ -112,7 +107,6 @@ const tournoi2023 = `
 
                 <div class="flex flex-col justify-center items-center text-center bg-white rounded-r w-24 h-16 xl:w-32 xl:h-24">
                     <p>?</p>
-                    <p>0 - 0</p>
                 </div>
             </div>
 
@@ -125,7 +119,6 @@ const tournoi2023 = `
 
                 <div class="flex flex-col justify-center items-center text-center bg-white rounded-r w-24 h-16 xl:w-32 xl:h-24">
                     <p>?</p>
-                    <p>0 - 0</p>
                 </div>
             </div>
         </div>
@@ -150,7 +143,7 @@ const tournoi2022 = `
 
         <div class = "flex">
             <div class="w-16 xl:w-20 h-2 bg-black translate-x-1 z-10"></div>
-            <div class="w-16 xl:w-20 h-2 bg-gray-500 -translate-x-1"></div>
+            <div class="w-16 xl:w-20 h-2 bg-green-img -translate-x-1"></div>
         </div>
     </div>
 
@@ -188,7 +181,7 @@ const tournoi2022 = `
 
             <div class = "flex">
                 <div class="w-16 xl:w-20 h-2 bg-black translate-x-1 z-10"></div>
-                <div class="w-16 xl:w-20 h-2 bg-gray-500 -translate-x-1"></div>
+                <div class="w-16 xl:w-20 h-2 bg-green-img -translate-x-1"></div>
             </div>
         </div>
 
@@ -196,7 +189,7 @@ const tournoi2022 = `
             <div class="w-2 h-6 xl:h-10 bg-black"></div>
 
             <div class = "flex">
-                <div class="w-16 xl:w-20 h-2 bg-gray-500 translate-x-1"></div>
+                <div class="w-16 xl:w-20 h-2 bg-green-img translate-x-1"></div>
                 <div class="w-16 xl:w-20 h-2 bg-black -translate-x-1"></div>
             </div>
         </div>
@@ -259,6 +252,8 @@ const tournoi2022 = `
             </div>
         </div>
     </div>`;
+
+document.querySelector(".tournament").innerHTML = tournoi2023;
 
 document.querySelectorAll(".handle").forEach(handle => {
     handle.addEventListener("click", e => {
