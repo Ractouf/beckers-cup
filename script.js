@@ -260,7 +260,6 @@ const tournoi2022 = `
         </div>
     </div>`;
 
-
 document.querySelectorAll(".handle").forEach(handle => {
     handle.addEventListener("click", e => {
         const progressBarItemCount = progressBar.children.length;
