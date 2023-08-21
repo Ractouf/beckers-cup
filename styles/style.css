@@ -128,3 +128,14 @@ main {
 .bg-green-img {
     background-color: #9CAB47;
 }
+
+.form-control {
+    padding-inline: 2rem;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.form-control::-ms-expand {
+    display: none;
+}
