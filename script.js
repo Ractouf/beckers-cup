@@ -7,16 +7,17 @@ const closeButton = document.querySelector("#close-button");
 const form = document.querySelector("form");
 const selectElement = document.querySelector("select");
 const tournoi2023 = `
-    <div class = "flex justify-center winner">
+    <div class = "flex justify-center">
         <div class="flex flex-row border-2 border-black rounded-md">
             <div class="bg-green-img text-white text-[10px] xl:text-base flex justify-center items-center w-8 rounded-l">
                 <div class="transform -rotate-90">
-                    <p>GAGNANTS</p>
+                    <p>FINALE</p>
                 </div>
             </div>
 
             <div class="flex flex-col justify-center items-center text-center bg-white rounded-r w-24 h-16 xl:w-32 xl:h-24">
-                <p>?</p>
+                <p class = "h-8 xl:h-12 w-24 xl:w-32 flex items-center justify-center border-b border-black">?</p>
+                <p class = "h-8 xl:h-12 w-24 xl:w-32 flex items-center justify-center">?</p>
             </div>
         </div>
     </div>
@@ -29,12 +30,13 @@ const tournoi2023 = `
         <div class="flex flex-row border-2 border-black rounded-md">
             <div class="bg-green-img text-white flex justify-center items-center w-8 rounded-l">
                 <div class="transform -rotate-90">
-                    <p>FINALE</p>
+                    <p>DEMI</p>
                 </div>
             </div>
 
             <div class="flex flex-col justify-center items-center text-center bg-white rounded-r w-24 h-16 xl:w-32 xl:h-24">
-                <p>?</p>
+                <p class = "h-8 xl:h-12 w-24 xl:w-32 flex items-center justify-center border-b border-black">?</p>
+                <p class = "h-8 xl:h-12 w-24 xl:w-32 flex items-center justify-center">?</p>
             </div>
         </div>
 
@@ -46,81 +48,13 @@ const tournoi2023 = `
         <div class="flex flex-row border-2 border-black rounded-md">
             <div class="bg-green-img text-white flex justify-center items-center w-8 rounded-l">
                 <div class="transform -rotate-90">
-                    <p>FINALE</p>
+                    <p>DEMI</p>
                 </div>
             </div>
 
             <div class="flex flex-col justify-center items-center text-center bg-white rounded-r w-24 h-16 xl:w-32 xl:h-24">
-                <p>?</p>
-            </div>
-        </div>
-    </div>
-
-    <div class = "flex justify-center gap-[32rem] xl:gap-[40rem]">
-        <div class="w-2 h-6 xl:h-10 bg-green-img"></div>
-        <div class="w-2 h-6 xl:h-10 bg-green-img"></div>
-    </div>
-
-    <div class = "flex justify-center quarter gap-32 xl:gap-40">
-        <div class = "flex items-center gap-8 xl:gap-10">
-            <div class="flex flex-row border-2 border-black rounded-md">
-                <div class="bg-green-img text-white flex justify-center items-center w-8 rounded-l">
-                    <div class="transform -rotate-90">
-                        <p>DEMI</p>
-                    </div>
-                </div>
-
-                <div class="flex flex-col justify-center items-center text-center bg-white rounded-r w-24 h-16 xl:w-32 xl:h-24">
-                    <p>?</p>
-                </div>
-            </div>
-            
-            <div class = "flex flex-row">
-                <div class="w-8 xl:w-10 h-2 bg-green-img"></div>
-                <div class="w-8 xl:w-10 h-2 bg-green-img"></div>
-            </div>
-            
-            <div class="flex flex-row border-2 border-black rounded-md">
-                <div class="bg-green-img text-white flex justify-center items-center w-8 rounded-l">
-                    <div class="transform -rotate-90">
-                        <p>DEMI</p>
-                    </div>
-                </div>
-
-                <div class="flex flex-col justify-center items-center text-center bg-white rounded-r w-24 h-16 xl:w-32 xl:h-24">
-                    <p>?</p>
-                </div>
-            </div>
-        </div>
-
-        <div class = "flex items-center gap-8 xl:gap-10">
-            <div class="flex flex-row border-2 border-black rounded-md">
-                <div class="bg-green-img text-white flex justify-center items-center w-8 rounded-l">
-                    <div class="transform -rotate-90">
-                        <p>DEMI</p>
-                    </div>
-                </div>
-
-                <div class="flex flex-col justify-center items-center text-center bg-white rounded-r w-24 h-16 xl:w-32 xl:h-24">
-                    <p>?</p>
-                </div>
-            </div>
-            
-            <div class = "flex flex-row">
-                <div class="w-8 xl:w-10 h-2 bg-green-img"></div>
-                <div class="w-8 xl:w-10 h-2 bg-green-img"></div>
-            </div>
-
-            <div class="flex flex-row border-2 border-black rounded-md">
-                <div class="bg-green-img text-white flex justify-center items-center w-8 rounded-l">
-                    <div class="transform -rotate-90">
-                        <p>DEMI</p>
-                    </div>
-                </div>
-
-                <div class="flex flex-col justify-center items-center text-center bg-white rounded-r w-24 h-16 xl:w-32 xl:h-24">
-                    <p>?</p>
-                </div>
+                <p class = "h-8 xl:h-12 w-24 xl:w-32 flex items-center justify-center border-b border-black">?</p>
+                <p class = "h-8 xl:h-12 w-24 xl:w-32 flex items-center justify-center">?</p>
             </div>
         </div>
     </div>`;
