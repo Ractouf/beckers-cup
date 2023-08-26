@@ -24,6 +24,18 @@ main {
 #bracket {
     background-image: url("https://media.discordapp.net/attachments/814147584054657026/1141401688243187712/IMG_3451.JPG?width=1202&height=676");
 }
+.form-control {
+    padding-inline: 2rem;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+.form-control::-ms-expand {
+    display: none;
+}
+.bg-green-img {
+    background-color: #9CAB47;
+}
 
 /*image carousel*/
 .header, form, #teams {
@@ -109,6 +121,9 @@ main {
 }
 
 /*team maker*/
+.teammaker {
+    background-image: url("https://cdn.discordapp.com/attachments/814147584054657026/1142404270541525082/IMG_3452.jpg");
+}
 
 /*Media queries*/
 @media (max-width: 1000px) {
@@ -119,23 +134,4 @@ main {
     #slider {
         --items-per-screen: 1;
     }
-}
-
-.teammaker {
-    background-image: url("https://cdn.discordapp.com/attachments/814147584054657026/1142404270541525082/IMG_3452.jpg");
-}
-
-.bg-green-img {
-    background-color: #9CAB47;
-}
-
-.form-control {
-    padding-inline: 2rem;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-}
-
-.form-control::-ms-expand {
-    display: none;
 }
