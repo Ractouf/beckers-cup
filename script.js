@@ -16,8 +16,14 @@ const tournoi2023 = `
             </div>
 
             <div class="flex flex-col justify-center items-center text-center bg-white rounded-r w-24 h-16 xl:w-32 xl:h-24">
-                <p class = "h-8 xl:h-12 w-24 xl:w-32 flex items-center justify-center border-b border-black">?</p>
-                <p class = "h-8 xl:h-12 w-24 xl:w-32 flex items-center justify-center">?</p>
+                <div class = "h-8 xl:h-12 w-24 xl:w-32 flex gap-3 items-center justify-center border-b border-black">
+                    <p>?</p>
+                    <p class = "font-bold"></p>
+                </div>
+                <div class = "h-8 xl:h-12 w-24 xl:w-32 flex gap-3 items-center justify-center">
+                    <p>?</p>
+                    <p class = "font-bold"></p>
+                </div>
             </div>
         </div>
     </div>
@@ -35,8 +41,14 @@ const tournoi2023 = `
             </div>
 
             <div class="flex flex-col justify-center items-center text-center bg-white rounded-r w-24 h-16 xl:w-32 xl:h-24">
-                <p class = "h-8 xl:h-12 w-24 xl:w-32 flex items-center justify-center border-b border-black">?</p>
-                <p class = "h-8 xl:h-12 w-24 xl:w-32 flex items-center justify-center">?</p>
+                <div class = "h-8 xl:h-12 w-24 xl:w-32 flex gap-3 items-center justify-center border-b border-black">
+                    <p>?</p>
+                    <p class = "font-bold"></p>
+                </div>
+                <div class = "h-8 xl:h-12 w-24 xl:w-32 flex gap-3 items-center justify-center">
+                    <p>?</p>
+                    <p class = "font-bold"></p>
+                </div>
             </div>
         </div>
 
@@ -53,146 +65,105 @@ const tournoi2023 = `
             </div>
 
             <div class="flex flex-col justify-center items-center text-center bg-white rounded-r w-24 h-16 xl:w-32 xl:h-24">
-                <p class = "h-8 xl:h-12 w-24 xl:w-32 flex items-center justify-center border-b border-black">?</p>
-                <p class = "h-8 xl:h-12 w-24 xl:w-32 flex items-center justify-center">?</p>
+                <div class = "h-8 xl:h-12 w-24 xl:w-32 flex gap-3 items-center justify-center border-b border-black">
+                    <p>?</p>
+                    <p class = "font-bold"></p>
+                </div>
+                <div class = "h-8 xl:h-12 w-24 xl:w-32 flex gap-3 items-center justify-center">
+                    <p>?</p>
+                    <p class = "font-bold"></p>
+                </div>
             </div>
         </div>
     </div>`;
 const tournoi2022 = `
-    <div class = "flex justify-center winner">
+    <div class = "flex justify-center">
         <div class="flex flex-row border-2 border-black rounded-md">
             <div class="bg-green-img text-white text-[10px] xl:text-base flex justify-center items-center w-8 rounded-l">
                 <div class="transform -rotate-90">
-                    <p>GAGNANTS</p>
+                    <p>FINALE</p>
                 </div>
             </div>
 
             <div class="flex flex-col justify-center items-center text-center bg-white rounded-r w-24 h-16 xl:w-32 xl:h-24">
-                <p>équipe 1</p>
+                <div class = "h-8 xl:h-12 w-24 xl:w-32 flex gap-3 items-center justify-center border-b border-black">
+                    <p>équipe1</p>
+                    <p class = "font-bold">14</p>
+                </div>
+                <div class = "h-8 xl:h-12 w-24 xl:w-32 flex gap-3 items-center justify-center">
+                    <p>équipe4</p>
+                    <p class = "font-bold">5</p>
+                </div>
             </div>
         </div>
     </div>
 
     <div class = "flex justify-center">
-        <div class="w-2 h-6 xl:h-10 bg-red-400"></div>
+        <div class="w-2 h-6 xl:h-10 bg-green-img"></div>
     </div>
 
     <div class = "flex justify-center items-center semi gap-16 xl:gap-20">
         <div class="flex flex-row border-2 border-black rounded-md">
             <div class="bg-green-img text-white flex justify-center items-center w-8 rounded-l">
                 <div class="transform -rotate-90">
-                    <p>FINALE</p>
+                    <p>DEMI</p>
                 </div>
             </div>
 
             <div class="flex flex-col justify-center items-center text-center bg-white rounded-r w-24 h-16 xl:w-32 xl:h-24">
-                <p>équipe 1</p>
-                <p>14</p>
+                <div class = "h-8 xl:h-12 w-24 xl:w-32 flex gap-3 items-center justify-center border-b border-black">
+                    <p>équipe1</p>
+                    <p class = "font-bold">13</p>
+                </div>
+                <div class = "h-8 xl:h-12 w-24 xl:w-32 flex gap-3 items-center justify-center">
+                    <p>équipe2</p>
+                    <p class = "font-bold">5</p>
+                </div>
             </div>
         </div>
 
         <div class = "flex flex-row gap-48 xl:gap-60">
-            <div class="w-8 xl:w-10 h-2 bg-red-400"></div>
+            <div class="w-8 xl:w-10 h-2 bg-green-img"></div>
             <div class="w-8 xl:w-10 h-2 bg-green-img"></div>
         </div>
 
         <div class="flex flex-row border-2 border-black rounded-md">
             <div class="bg-green-img text-white flex justify-center items-center w-8 rounded-l">
                 <div class="transform -rotate-90">
-                    <p>FINALE</p>
+                    <p>DEMI</p>
                 </div>
             </div>
 
             <div class="flex flex-col justify-center items-center text-center bg-white rounded-r w-24 h-16 xl:w-32 xl:h-24">
-                <p>équipe 4</p>
-                <p>5</p>
-            </div>
-        </div>
-    </div>
-
-    <div class = "flex justify-center gap-[32rem] xl:gap-[40rem]">
-        <div class="w-2 h-6 xl:h-10 bg-red-400"></div>
-        <div class="w-2 h-6 xl:h-10 bg-red-400"></div>
-    </div>
-
-    <div class = "flex justify-center quarter gap-32 xl:gap-40">
-        <div class = "flex items-center gap-8 xl:gap-10">
-            <div class="flex flex-row border-2 border-black rounded-md">
-                <div class="bg-green-img text-white flex justify-center items-center w-8 rounded-l">
-                    <div class="transform -rotate-90">
-                        <p>DEMI</p>
-                    </div>
+                <div class = "h-8 xl:h-12 w-24 xl:w-32 flex gap-3 items-center justify-center border-b border-black">
+                    <p>équipe3</p>
+                    <p class = "font-bold">3</p>
                 </div>
-
-                <div class="flex flex-col justify-center items-center text-center bg-white rounded-r w-24 h-16 xl:w-32 xl:h-24">
-                    <p>équipe 1</p>
-                    <p>13</p>
-                </div>
-            </div>
-            
-            <div class = "flex flex-row">
-                <div class="w-8 xl:w-10 h-2 bg-red-400"></div>
-                <div class="w-8 xl:w-10 h-2 bg-green-img"></div>
-            </div>
-            
-            <div class="flex flex-row border-2 border-black rounded-md">
-                <div class="bg-green-img text-white flex justify-center items-center w-8 rounded-l">
-                    <div class="transform -rotate-90">
-                        <p>DEMI</p>
-                    </div>
-                </div>
-
-                <div class="flex flex-col justify-center items-center text-center bg-white rounded-r w-24 h-16 xl:w-32 xl:h-24">
-                    <p>équipe 2</p>
-                    <p>5</p>
-                </div>
-            </div>
-        </div>
-
-        <div class = "flex items-center gap-8 xl:gap-10">
-            <div class="flex flex-row border-2 border-black rounded-md">
-                <div class="bg-green-img text-white flex justify-center items-center w-8 rounded-l">
-                    <div class="transform -rotate-90">
-                        <p>DEMI</p>
-                    </div>
-                </div>
-
-                <div class="flex flex-col justify-center items-center text-center bg-white rounded-r w-24 h-16 xl:w-32 xl:h-24">
-                    <p>équipe 3</p>
-                    <p>3</p>
-                </div>
-            </div>
-            
-            <div class = "flex flex-row">
-                <div class="w-8 xl:w-10 h-2 bg-green-img"></div>
-                <div class="w-8 xl:w-10 h-2 bg-red-400"></div>
-            </div>
-
-            <div class="flex flex-row border-2 border-black rounded-md">
-                <div class="bg-green-img text-white flex justify-center items-center w-8 rounded-l">
-                    <div class="transform -rotate-90">
-                        <p>DEMI</p>
-                    </div>
-                </div>
-
-                <div class="flex flex-col justify-center items-center text-center bg-white rounded-r w-24 h-16 xl:w-32 xl:h-24">
-                    <p>équipe 4</p>
-                    <p>13</p>
+                <div class = "h-8 xl:h-12 w-24 xl:w-32 flex gap-3 items-center justify-center">
+                    <p>équipe4</p>
+                    <p class = "font-bold">13</p>
                 </div>
             </div>
         </div>
     </div>`;
 const tournoiVide = `
-    <div class = "flex justify-center winner">
+    <div class = "flex justify-center">
         <div class="flex flex-row border-2 border-black rounded-md">
             <div class="bg-green-img text-white text-[10px] xl:text-base flex justify-center items-center w-8 rounded-l">
                 <div class="transform -rotate-90">
-                    <p>GAGNANTS</p>
+                    <p>FINALE</p>
                 </div>
             </div>
 
             <div class="flex flex-col justify-center items-center text-center bg-white rounded-r w-24 h-16 xl:w-32 xl:h-24">
-                <p>?</p>
+                <div class = "h-8 xl:h-12 w-24 xl:w-32 flex gap-3 items-center justify-center border-b border-black">
+                    <p>?</p>
+                    <p class = "font-bold"></p>
+                </div>
+                <div class = "h-8 xl:h-12 w-24 xl:w-32 flex gap-3 items-center justify-center">
+                    <p>?</p>
+                    <p class = "font-bold"></p>
+                </div>
             </div>
         </div>
     </div>
@@ -205,12 +176,19 @@ const tournoiVide = `
         <div class="flex flex-row border-2 border-black rounded-md">
             <div class="bg-green-img text-white flex justify-center items-center w-8 rounded-l">
                 <div class="transform -rotate-90">
-                    <p>FINALE</p>
+                    <p>DEMI</p>
                 </div>
             </div>
 
             <div class="flex flex-col justify-center items-center text-center bg-white rounded-r w-24 h-16 xl:w-32 xl:h-24">
-                <p>?</p>
+                <div class = "h-8 xl:h-12 w-24 xl:w-32 flex gap-3 items-center justify-center border-b border-black">
+                    <p>?</p>
+                    <p class = "font-bold"></p>
+                </div>
+                <div class = "h-8 xl:h-12 w-24 xl:w-32 flex gap-3 items-center justify-center">
+                    <p>?</p>
+                    <p class = "font-bold"></p>
+                </div>
             </div>
         </div>
 
@@ -222,80 +200,18 @@ const tournoiVide = `
         <div class="flex flex-row border-2 border-black rounded-md">
             <div class="bg-green-img text-white flex justify-center items-center w-8 rounded-l">
                 <div class="transform -rotate-90">
-                    <p>FINALE</p>
+                    <p>DEMI</p>
                 </div>
             </div>
 
             <div class="flex flex-col justify-center items-center text-center bg-white rounded-r w-24 h-16 xl:w-32 xl:h-24">
-                <p>?</p>
-            </div>
-        </div>
-    </div>
-
-    <div class = "flex justify-center gap-[32rem] xl:gap-[40rem]">
-        <div class="w-2 h-6 xl:h-10 bg-green-img"></div>
-        <div class="w-2 h-6 xl:h-10 bg-green-img"></div>
-    </div>
-
-    <div class = "flex justify-center quarter gap-32 xl:gap-40">
-        <div class = "flex items-center gap-8 xl:gap-10">
-            <div class="flex flex-row border-2 border-black rounded-md">
-                <div class="bg-green-img text-white flex justify-center items-center w-8 rounded-l">
-                    <div class="transform -rotate-90">
-                        <p>DEMI</p>
-                    </div>
-                </div>
-
-                <div class="flex flex-col justify-center items-center text-center bg-white rounded-r w-24 h-16 xl:w-32 xl:h-24">
+                <div class = "h-8 xl:h-12 w-24 xl:w-32 flex gap-3 items-center justify-center border-b border-black">
                     <p>?</p>
+                    <p class = "font-bold"></p>
                 </div>
-            </div>
-            
-            <div class = "flex flex-row">
-                <div class="w-8 xl:w-10 h-2 bg-green-img"></div>
-                <div class="w-8 xl:w-10 h-2 bg-green-img"></div>
-            </div>
-            
-            <div class="flex flex-row border-2 border-black rounded-md">
-                <div class="bg-green-img text-white flex justify-center items-center w-8 rounded-l">
-                    <div class="transform -rotate-90">
-                        <p>DEMI</p>
-                    </div>
-                </div>
-
-                <div class="flex flex-col justify-center items-center text-center bg-white rounded-r w-24 h-16 xl:w-32 xl:h-24">
+                <div class = "h-8 xl:h-12 w-24 xl:w-32 flex gap-3 items-center justify-center">
                     <p>?</p>
-                </div>
-            </div>
-        </div>
-
-        <div class = "flex items-center gap-8 xl:gap-10">
-            <div class="flex flex-row border-2 border-black rounded-md">
-                <div class="bg-green-img text-white flex justify-center items-center w-8 rounded-l">
-                    <div class="transform -rotate-90">
-                        <p>DEMI</p>
-                    </div>
-                </div>
-
-                <div class="flex flex-col justify-center items-center text-center bg-white rounded-r w-24 h-16 xl:w-32 xl:h-24">
-                    <p>?</p>
-                </div>
-            </div>
-            
-            <div class = "flex flex-row">
-                <div class="w-8 xl:w-10 h-2 bg-green-img"></div>
-                <div class="w-8 xl:w-10 h-2 bg-green-img"></div>
-            </div>
-
-            <div class="flex flex-row border-2 border-black rounded-md">
-                <div class="bg-green-img text-white flex justify-center items-center w-8 rounded-l">
-                    <div class="transform -rotate-90">
-                        <p>DEMI</p>
-                    </div>
-                </div>
-
-                <div class="flex flex-col justify-center items-center text-center bg-white rounded-r w-24 h-16 xl:w-32 xl:h-24">
-                    <p>?</p>
+                    <p class = "font-bold"></p>
                 </div>
             </div>
         </div>
