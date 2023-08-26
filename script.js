@@ -256,6 +256,7 @@ document.querySelectorAll(".handle").forEach(handle => {
         }
         if (handle != null) {
             if (handle.classList.contains("left-handle")) {
+                clearInterval(intervalID);
                 if (sliderIndex - 1 < 0) {
                     slider.style.setProperty("--slider-index", progressBarItemCount - 1);
                     progressBar.children[sliderIndex].classList.remove("active");
@@ -265,9 +266,8 @@ document.querySelectorAll(".handle").forEach(handle => {
                     progressBar.children[sliderIndex].classList.remove("active");
                     progressBar.children[sliderIndex - 1].classList.add("active");
                 }
-            }
-
-            if (handle.classList.contains("right-handle")) {
+            } else if (handle.classList.contains("right-handle")) {
+                clearInterval(intervalID);
                 if (sliderIndex + 1 >= progressBarItemCount) {
                     slider.style.setProperty("--slider-index", 0);
                     progressBar.children[sliderIndex].classList.remove("active");
@@ -278,6 +278,7 @@ document.querySelectorAll(".handle").forEach(handle => {
                     progressBar.children[sliderIndex + 1].classList.add("active");
                 }
             }
+            startCarousel();
         }
     });
 });
