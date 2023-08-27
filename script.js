@@ -17,11 +17,11 @@ const tournoi2023 = `
                 </div>
     
                 <div class = "flex flex-col justify-center items-center text-center bg-white rounded-r w-24 h-16 xl:w-32 xl:h-24">
-                    <div class = "h-8 xl:h-12 w-24 xl:w-32 border-b border-black flex items-center gap-2">
+                    <div class = "h-8 xl:h-12 w-24 xl:w-32 border-b border-black flex items-center gap-1">
                         <p class = "font-bold border-r border-black h-8 xl:h-12 w-8 xl:w-12 flex justify-center items-center"></p>
                         <p>?</p>
                     </div>
-                    <div class = "h-8 xl:h-12 w-24 xl:w-32 flex items-center gap-2">
+                    <div class = "h-8 xl:h-12 w-24 xl:w-32 flex items-center gap-1">
                         <p class = "font-bold border-r border-black h-8 xl:h-12 w-8 xl:w-12 flex justify-center items-center"></p>
                         <p>?</p>
                     </div>
@@ -37,11 +37,11 @@ const tournoi2023 = `
                 </div>
     
                 <div class = "flex flex-col justify-center items-center text-center bg-white rounded-r w-24 h-16 xl:w-32 xl:h-24">
-                    <div class = "h-8 xl:h-12 w-24 xl:w-32 border-b border-black flex items-center gap-2">
+                    <div class = "h-8 xl:h-12 w-24 xl:w-32 border-b border-black flex items-center gap-1">
                         <p class = "font-bold border-r border-black h-8 xl:h-12 w-8 xl:w-12 flex justify-center items-center"></p>
                         <p>?</p>
                     </div>
-                    <div class = "h-8 xl:h-12 w-24 xl:w-32 flex items-center gap-2">
+                    <div class = "h-8 xl:h-12 w-24 xl:w-32 flex items-center gap-1">
                         <p class = "font-bold border-r border-black h-8 xl:h-12 w-8 xl:w-12 flex justify-center items-center"></p>
                         <p>?</p>
                     </div>
@@ -63,11 +63,11 @@ const tournoi2023 = `
             </div>
 
             <div class = "flex flex-col justify-center items-center text-center bg-white rounded-r w-24 h-16 xl:w-32 xl:h-24">
-                <div class = "h-8 xl:h-12 w-24 xl:w-32 border-b border-black flex items-center gap-2">
+                <div class = "h-8 xl:h-12 w-24 xl:w-32 border-b border-black flex items-center gap-1">
                     <p class = "font-bold border-r border-black h-8 xl:h-12 w-8 xl:w-12 flex justify-center items-center"></p>
                     <p>?</p>
                 </div>
-                <div class = "h-8 xl:h-12 w-24 xl:w-32 flex items-center gap-2">
+                <div class = "h-8 xl:h-12 w-24 xl:w-32 flex items-center gap-1">
                     <p class = "font-bold border-r border-black h-8 xl:h-12 w-8 xl:w-12 flex justify-center items-center"></p>
                     <p>?</p>
                 </div>
@@ -87,11 +87,11 @@ const tournoi2023 = `
             </div>
 
             <div class = "flex flex-col justify-center items-center text-center bg-white rounded-r w-24 h-16 xl:w-32 xl:h-24">
-                <div class = "h-8 xl:h-12 w-24 xl:w-32 border-b border-black flex items-center gap-2">
+                <div class = "h-8 xl:h-12 w-24 xl:w-32 border-b border-black flex items-center gap-1">
                     <p class = "font-bold border-r border-black h-8 xl:h-12 w-8 xl:w-12 flex justify-center items-center"></p>
                     <p>?</p>
                 </div>
-                <div class = "h-8 xl:h-12 w-24 xl:w-32 flex items-center gap-2">
+                <div class = "h-8 xl:h-12 w-24 xl:w-32 flex items-center gap-1">
                     <p class = "font-bold border-r border-black h-8 xl:h-12 w-8 xl:w-12 flex justify-center items-center"></p>
                     <p>?</p>
                 </div>
@@ -109,11 +109,11 @@ const tournoi2022 = `
                 </div>
     
                 <div class = "flex flex-col justify-center items-center text-center bg-white rounded-r w-24 h-16 xl:w-32 xl:h-24">
-                    <div class = "h-8 xl:h-12 w-24 xl:w-32 border-b border-black flex items-center gap-2">
+                    <div class = "h-8 xl:h-12 w-24 xl:w-32 border-b border-black flex items-center gap-1">
                         <p class = "font-bold border-r border-black h-8 xl:h-12 w-8 xl:w-12 flex justify-center items-center">9</p>
                         <p>équipe1</p>
                     </div>
-                    <div class = "h-8 xl:h-12 w-24 xl:w-32 flex items-center gap-2">
+                    <div class = "h-8 xl:h-12 w-24 xl:w-32 flex items-center gap-1">
                         <p class = "font-bold border-r border-black h-8 xl:h-12 w-8 xl:w-12 flex justify-center items-center">5</p>
                         <p>équipe4</p>
                     </div>
@@ -129,11 +129,11 @@ const tournoi2022 = `
                 </div>
     
                 <div class = "flex flex-col justify-center items-center text-center bg-white rounded-r w-24 h-16 xl:w-32 xl:h-24">
-                    <div class = "h-8 xl:h-12 w-24 xl:w-32 border-b border-black flex items-center gap-2">
+                    <div class = "h-8 xl:h-12 w-24 xl:w-32 border-b border-black flex items-center gap-1">
                         <p class = "font-bold border-r border-black h-8 xl:h-12 w-8 xl:w-12 flex justify-center items-center">5</p>
                         <p>équipe3</p>
                     </div>
-                    <div class = "h-8 xl:h-12 w-24 xl:w-32 flex items-center gap-2">
+                    <div class = "h-8 xl:h-12 w-24 xl:w-32 flex items-center gap-1">
                         <p class = "font-bold border-r border-black h-8 xl:h-12 w-8 xl:w-12 flex justify-center items-center">8</p>
                         <p>équipe2</p>
                     </div>
@@ -155,11 +155,11 @@ const tournoi2022 = `
             </div>
 
             <div class = "flex flex-col justify-center items-center text-center bg-white rounded-r w-24 h-16 xl:w-32 xl:h-24">
-                <div class = "h-8 xl:h-12 w-24 xl:w-32 border-b border-black flex items-center gap-2">
+                <div class = "h-8 xl:h-12 w-24 xl:w-32 border-b border-black flex items-center gap-1">
                     <p class = "font-bold border-r border-black h-8 xl:h-12 w-8 xl:w-12 flex justify-center items-center">8</p>
                     <p>équipe1</p>
                 </div>
-                <div class = "h-8 xl:h-12 w-24 xl:w-32 flex items-center gap-2">
+                <div class = "h-8 xl:h-12 w-24 xl:w-32 flex items-center gap-1">
                     <p class = "font-bold border-r border-black h-8 xl:h-12 w-8 xl:w-12 flex justify-center items-center">5</p>
                     <p>équipe2</p>
                 </div>
@@ -179,11 +179,11 @@ const tournoi2022 = `
             </div>
 
             <div class = "flex flex-col justify-center items-center text-center bg-white rounded-r w-24 h-16 xl:w-32 xl:h-24">
-                <div class = "h-8 xl:h-12 w-24 xl:w-32 border-b border-black flex items-center gap-2">
+                <div class = "h-8 xl:h-12 w-24 xl:w-32 border-b border-black flex items-center gap-1">
                     <p class = "font-bold border-r border-black h-8 xl:h-12 w-8 xl:w-12 flex justify-center items-center">3</p>
                     <p>équipe3</p>
                 </div>
-                <div class = "h-8 xl:h-12 w-24 xl:w-32 flex items-center gap-2">
+                <div class = "h-8 xl:h-12 w-24 xl:w-32 flex items-center gap-1">
                     <p class = "font-bold border-r border-black h-8 xl:h-12 w-8 xl:w-12 flex justify-center items-center">8</p>
                     <p>équipe4</p>
                 </div>
@@ -201,11 +201,11 @@ const tournoiVide = `
                 </div>
     
                 <div class = "flex flex-col justify-center items-center text-center bg-white rounded-r w-24 h-16 xl:w-32 xl:h-24">
-                    <div class = "h-8 xl:h-12 w-24 xl:w-32 border-b border-black flex items-center gap-2">
+                    <div class = "h-8 xl:h-12 w-24 xl:w-32 border-b border-black flex items-center gap-1">
                         <p class = "font-bold border-r border-black h-8 xl:h-12 w-8 xl:w-12 flex justify-center items-center"></p>
                         <p>?</p>
                     </div>
-                    <div class = "h-8 xl:h-12 w-24 xl:w-32 flex items-center gap-2">
+                    <div class = "h-8 xl:h-12 w-24 xl:w-32 flex items-center gap-1">
                         <p class = "font-bold border-r border-black h-8 xl:h-12 w-8 xl:w-12 flex justify-center items-center"></p>
                         <p>?</p>
                     </div>
@@ -221,11 +221,11 @@ const tournoiVide = `
                 </div>
     
                 <div class = "flex flex-col justify-center items-center text-center bg-white rounded-r w-24 h-16 xl:w-32 xl:h-24">
-                    <div class = "h-8 xl:h-12 w-24 xl:w-32 border-b border-black flex items-center gap-2">
+                    <div class = "h-8 xl:h-12 w-24 xl:w-32 border-b border-black flex items-center gap-1">
                         <p class = "font-bold border-r border-black h-8 xl:h-12 w-8 xl:w-12 flex justify-center items-center"></p>
                         <p>?</p>
                     </div>
-                    <div class = "h-8 xl:h-12 w-24 xl:w-32 flex items-center gap-2">
+                    <div class = "h-8 xl:h-12 w-24 xl:w-32 flex items-center gap-1">
                         <p class = "font-bold border-r border-black h-8 xl:h-12 w-8 xl:w-12 flex justify-center items-center"></p>
                         <p>?</p>
                     </div>
@@ -247,11 +247,11 @@ const tournoiVide = `
             </div>
 
             <div class = "flex flex-col justify-center items-center text-center bg-white rounded-r w-24 h-16 xl:w-32 xl:h-24">
-                <div class = "h-8 xl:h-12 w-24 xl:w-32 border-b border-black flex items-center gap-2">
+                <div class = "h-8 xl:h-12 w-24 xl:w-32 border-b border-black flex items-center gap-1">
                     <p class = "font-bold border-r border-black h-8 xl:h-12 w-8 xl:w-12 flex justify-center items-center"></p>
                     <p>?</p>
                 </div>
-                <div class = "h-8 xl:h-12 w-24 xl:w-32 flex items-center gap-2">
+                <div class = "h-8 xl:h-12 w-24 xl:w-32 flex items-center gap-1">
                     <p class = "font-bold border-r border-black h-8 xl:h-12 w-8 xl:w-12 flex justify-center items-center"></p>
                     <p>?</p>
                 </div>
@@ -271,11 +271,11 @@ const tournoiVide = `
             </div>
 
             <div class = "flex flex-col justify-center items-center text-center bg-white rounded-r w-24 h-16 xl:w-32 xl:h-24">
-                <div class = "h-8 xl:h-12 w-24 xl:w-32 border-b border-black flex items-center gap-2">
+                <div class = "h-8 xl:h-12 w-24 xl:w-32 border-b border-black flex items-center gap-1">
                     <p class = "font-bold border-r border-black h-8 xl:h-12 w-8 xl:w-12 flex justify-center items-center"></p>
                     <p>?</p>
                 </div>
-                <div class = "h-8 xl:h-12 w-24 xl:w-32 flex items-center gap-2">
+                <div class = "h-8 xl:h-12 w-24 xl:w-32 flex items-center gap-1">
                     <p class = "font-bold border-r border-black h-8 xl:h-12 w-8 xl:w-12 flex justify-center items-center"></p>
                     <p>?</p>
                 </div>
