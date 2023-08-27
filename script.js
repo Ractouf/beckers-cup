@@ -17,13 +17,13 @@ const tournoi2023 = `
                 </div>
     
                 <div class="flex flex-col justify-center items-center text-center bg-white rounded-r w-24 h-16 xl:w-32 xl:h-24">
-                    <div class = "h-8 xl:h-12 w-24 xl:w-32 flex gap-3 items-center justify-center border-b border-black">
-                        <p>?</p>
-                        <p class = "font-bold"></p>
+                    <div class = "h-8 xl:h-12 w-24 xl:w-32 border-b border-black flex items-center gap-2">
+                        <p class = "font-bold border-r border-black h-8 xl:h-12 w-8 xl:w-12 flex justify-center items-center"></p>
+                        <p class = "">?</p>
                     </div>
-                    <div class = "h-8 xl:h-12 w-24 xl:w-32 flex gap-3 items-center justify-center">
-                        <p>?</p>
-                        <p class = "font-bold"></p>
+                    <div class = "h-8 xl:h-12 w-24 xl:w-32 flex items-center gap-2">
+                        <p class = "font-bold border-r border-black h-8 xl:h-12 w-8 xl:w-12 flex justify-center items-center"></p>
+                        <p class = "">?</p>
                     </div>
                 </div>
             </div>
@@ -37,13 +37,13 @@ const tournoi2023 = `
                 </div>
     
                 <div class="flex flex-col justify-center items-center text-center bg-white rounded-r w-24 h-16 xl:w-32 xl:h-24">
-                    <div class = "h-8 xl:h-12 w-24 xl:w-32 flex gap-3 items-center justify-center border-b border-black">
-                        <p>?</p>
-                        <p class = "font-bold"></p>
+                    <div class = "h-8 xl:h-12 w-24 xl:w-32 border-b border-black flex items-center gap-2">
+                        <p class = "font-bold border-r border-black h-8 xl:h-12 w-8 xl:w-12 flex justify-center items-center"></p>
+                        <p class = "">?</p>
                     </div>
-                    <div class = "h-8 xl:h-12 w-24 xl:w-32 flex gap-3 items-center justify-center">
-                        <p>?</p>
-                        <p class = "font-bold"></p>
+                    <div class = "h-8 xl:h-12 w-24 xl:w-32 flex items-center gap-2">
+                        <p class = "font-bold border-r border-black h-8 xl:h-12 w-8 xl:w-12 flex justify-center items-center"></p>
+                        <p class = "">?</p>
                     </div>
                 </div>
             </div>
@@ -63,13 +63,13 @@ const tournoi2023 = `
             </div>
 
             <div class="flex flex-col justify-center items-center text-center bg-white rounded-r w-24 h-16 xl:w-32 xl:h-24">
-                <div class = "h-8 xl:h-12 w-24 xl:w-32 flex gap-3 items-center justify-center border-b border-black">
-                    <p>?</p>
-                    <p class = "font-bold"></p>
+                <div class = "h-8 xl:h-12 w-24 xl:w-32 border-b border-black flex items-center gap-2">
+                    <p class = "font-bold border-r border-black h-8 xl:h-12 w-8 xl:w-12 flex justify-center items-center"></p>
+                    <p class = "">?</p>
                 </div>
-                <div class = "h-8 xl:h-12 w-24 xl:w-32 flex gap-3 items-center justify-center">
-                    <p>?</p>
-                    <p class = "font-bold"></p>
+                <div class = "h-8 xl:h-12 w-24 xl:w-32 flex items-center gap-2">
+                    <p class = "font-bold border-r border-black h-8 xl:h-12 w-8 xl:w-12 flex justify-center items-center"></p>
+                    <p class = "">?</p>
                 </div>
             </div>
         </div>
@@ -87,34 +87,56 @@ const tournoi2023 = `
             </div>
 
             <div class="flex flex-col justify-center items-center text-center bg-white rounded-r w-24 h-16 xl:w-32 xl:h-24">
-                <div class = "h-8 xl:h-12 w-24 xl:w-32 flex gap-3 items-center justify-center border-b border-black">
-                    <p>?</p>
-                    <p class = "font-bold"></p>
+                <div class = "h-8 xl:h-12 w-24 xl:w-32 border-b border-black flex items-center gap-2">
+                    <p class = "font-bold border-r border-black h-8 xl:h-12 w-8 xl:w-12 flex justify-center items-center"></p>
+                    <p class = "">?</p>
                 </div>
-                <div class = "h-8 xl:h-12 w-24 xl:w-32 flex gap-3 items-center justify-center">
-                    <p>?</p>
-                    <p class = "font-bold"></p>
+                <div class = "h-8 xl:h-12 w-24 xl:w-32 flex items-center gap-2">
+                    <p class = "font-bold border-r border-black h-8 xl:h-12 w-8 xl:w-12 flex justify-center items-center"></p>
+                    <p class = "">?</p>
                 </div>
             </div>
         </div>
     </div>`;
 const tournoi2022 = `
     <div class = "flex justify-center">
-        <div class="flex flex-row border-2 border-black rounded-md">
-            <div class="bg-green-img text-white flex justify-center items-center w-8 rounded-l">
-                <div class="transform -rotate-90">
-                    <p>FINALE</p>
+        <div class = "inline-block relative">
+            <div class="flex flex-row border-2 border-black rounded-md">
+                <div class="bg-green-img text-white flex justify-center items-center w-8 rounded-l">
+                    <div class="transform -rotate-90">
+                        <p>FINALE</p>
+                    </div>
+                </div>
+    
+                <div class="flex flex-col justify-center items-center text-center bg-white rounded-r w-24 h-16 xl:w-32 xl:h-24">
+                    <div class = "h-8 xl:h-12 w-24 xl:w-32 border-b border-black flex items-center gap-2">
+                        <p class = "font-bold border-r border-black h-8 xl:h-12 w-8 xl:w-12 flex justify-center items-center">9</p>
+                        <p class = "">équipe1</p>
+                    </div>
+                    <div class = "h-8 xl:h-12 w-24 xl:w-32 flex items-center gap-2">
+                        <p class = "font-bold border-r border-black h-8 xl:h-12 w-8 xl:w-12 flex justify-center items-center">5</p>
+                        <p class = "">équipe4</p>
+                    </div>
                 </div>
             </div>
-
-            <div class="flex flex-col justify-center items-center text-center bg-white rounded-r w-24 h-16 xl:w-32 xl:h-24">
-                <div class = "h-8 xl:h-12 w-24 xl:w-32 border-b border-black flex items-center gap-2">
-                    <p class = "font-bold border-r border-black h-8 xl:h-12 w-8 xl:w-12 flex justify-center items-center">14</p>
-                    <p class = "">équipe1</p>
+        </div>
+        <div class = "absolute right-14 xl:right-28">
+            <div class="flex flex-row border-2 border-black rounded-md">
+                <div class="bg-green-img text-white flex justify-center items-center w-8 rounded-l">
+                    <div class="transform -rotate-90">
+                        <p>P.FINALE</p>
+                    </div>
                 </div>
-                <div class = "h-8 xl:h-12 w-24 xl:w-32 border-b border-black flex items-center gap-2">
-                    <p class = "font-bold border-r border-black h-8 xl:h-12 w-8 xl:w-12 flex justify-center items-center">5</p>
-                    <p class = "">équipe4</p>
+    
+                <div class="flex flex-col justify-center items-center text-center bg-white rounded-r w-24 h-16 xl:w-32 xl:h-24">
+                    <div class = "h-8 xl:h-12 w-24 xl:w-32 border-b border-black flex items-center gap-2">
+                        <p class = "font-bold border-r border-black h-8 xl:h-12 w-8 xl:w-12 flex justify-center items-center">5</p>
+                        <p class = "">équipe3</p>
+                    </div>
+                    <div class = "h-8 xl:h-12 w-24 xl:w-32 flex items-center gap-2">
+                        <p class = "font-bold border-r border-black h-8 xl:h-12 w-8 xl:w-12 flex justify-center items-center">8</p>
+                        <p class = "">équipe2</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -134,10 +156,10 @@ const tournoi2022 = `
 
             <div class="flex flex-col justify-center items-center text-center bg-white rounded-r w-24 h-16 xl:w-32 xl:h-24">
                 <div class = "h-8 xl:h-12 w-24 xl:w-32 border-b border-black flex items-center gap-2">
-                    <p class = "font-bold border-r border-black h-8 xl:h-12 w-8 xl:w-12 flex justify-center items-center">13</p>
+                    <p class = "font-bold border-r border-black h-8 xl:h-12 w-8 xl:w-12 flex justify-center items-center">8</p>
                     <p class = "">équipe1</p>
                 </div>
-                <div class = "h-8 xl:h-12 w-24 xl:w-32 border-b border-black flex items-center gap-2">
+                <div class = "h-8 xl:h-12 w-24 xl:w-32 flex items-center gap-2">
                     <p class = "font-bold border-r border-black h-8 xl:h-12 w-8 xl:w-12 flex justify-center items-center">5</p>
                     <p class = "">équipe2</p>
                 </div>
@@ -161,55 +183,52 @@ const tournoi2022 = `
                     <p class = "font-bold border-r border-black h-8 xl:h-12 w-8 xl:w-12 flex justify-center items-center">3</p>
                     <p class = "">équipe3</p>
                 </div>
-                <div class = "h-8 xl:h-12 w-24 xl:w-32 border-b border-black flex items-center gap-2">
-                    <p class = "font-bold border-r border-black h-8 xl:h-12 w-8 xl:w-12 flex justify-center items-center">13</p>
+                <div class = "h-8 xl:h-12 w-24 xl:w-32 flex items-center gap-2">
+                    <p class = "font-bold border-r border-black h-8 xl:h-12 w-8 xl:w-12 flex justify-center items-center">8</p>
                     <p class = "">équipe4</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    
-    <div class = "flex justify-center">
-        <div class="w-2 h-6 xl:h-10 bg-green-img"></div>
-    </div>
-    
-    <div class = "flex justify-center">
-        <div class="flex flex-row border-2 border-black rounded-md">
-            <div class="bg-green-img text-white flex justify-center items-center w-8 rounded-l">
-                <div class="transform -rotate-90">
-                    <p>P.FINALE</p>
-                </div>
-            </div>
-
-            <div class="flex flex-col justify-center items-center text-center bg-white rounded-r w-24 h-16 xl:w-32 xl:h-24">
-                <div class = "h-8 xl:h-12 w-24 xl:w-32 border-b border-black flex items-center gap-2">
-                    <p class = "font-bold border-r border-black h-8 xl:h-12 w-8 xl:w-12 flex justify-center items-center">5</p>
-                    <p class = "">équipe3</p>
-                </div>
-                <div class = "h-8 xl:h-12 w-24 xl:w-32 border-b border-black flex items-center gap-2">
-                    <p class = "font-bold border-r border-black h-8 xl:h-12 w-8 xl:w-12 flex justify-center items-center">13</p>
-                    <p class = "">équipe2</p>
                 </div>
             </div>
         </div>
     </div>`;
 const tournoiVide = `
     <div class = "flex justify-center">
-        <div class="flex flex-row border-2 border-black rounded-md">
-            <div class="bg-green-img text-white flex justify-center items-center w-8 rounded-l">
-                <div class="transform -rotate-90">
-                    <p>FINALE</p>
+        <div class = "inline-block relative">
+            <div class="flex flex-row border-2 border-black rounded-md">
+                <div class="bg-green-img text-white flex justify-center items-center w-8 rounded-l">
+                    <div class="transform -rotate-90">
+                        <p>FINALE</p>
+                    </div>
+                </div>
+    
+                <div class="flex flex-col justify-center items-center text-center bg-white rounded-r w-24 h-16 xl:w-32 xl:h-24">
+                    <div class = "h-8 xl:h-12 w-24 xl:w-32 border-b border-black flex items-center gap-2">
+                        <p class = "font-bold border-r border-black h-8 xl:h-12 w-8 xl:w-12 flex justify-center items-center"></p>
+                        <p class = "">?</p>
+                    </div>
+                    <div class = "h-8 xl:h-12 w-24 xl:w-32 flex items-center gap-2">
+                        <p class = "font-bold border-r border-black h-8 xl:h-12 w-8 xl:w-12 flex justify-center items-center"></p>
+                        <p class = "">?</p>
+                    </div>
                 </div>
             </div>
-
-            <div class="flex flex-col justify-center items-center text-center bg-white rounded-r w-24 h-16 xl:w-32 xl:h-24">
-                <div class = "h-8 xl:h-12 w-24 xl:w-32 flex gap-3 items-center justify-center border-b border-black">
-                    <p>?</p>
-                    <p class = "font-bold"></p>
+        </div>
+        <div class = "absolute right-14 xl:right-28">
+            <div class="flex flex-row border-2 border-black rounded-md">
+                <div class="bg-green-img text-white flex justify-center items-center w-8 rounded-l">
+                    <div class="transform -rotate-90">
+                        <p>P.FINALE</p>
+                    </div>
                 </div>
-                <div class = "h-8 xl:h-12 w-24 xl:w-32 flex gap-3 items-center justify-center">
-                    <p>?</p>
-                    <p class = "font-bold"></p>
+    
+                <div class="flex flex-col justify-center items-center text-center bg-white rounded-r w-24 h-16 xl:w-32 xl:h-24">
+                    <div class = "h-8 xl:h-12 w-24 xl:w-32 border-b border-black flex items-center gap-2">
+                        <p class = "font-bold border-r border-black h-8 xl:h-12 w-8 xl:w-12 flex justify-center items-center"></p>
+                        <p class = "">?</p>
+                    </div>
+                    <div class = "h-8 xl:h-12 w-24 xl:w-32 flex items-center gap-2">
+                        <p class = "font-bold border-r border-black h-8 xl:h-12 w-8 xl:w-12 flex justify-center items-center"></p>
+                        <p class = "">?</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -228,13 +247,13 @@ const tournoiVide = `
             </div>
 
             <div class="flex flex-col justify-center items-center text-center bg-white rounded-r w-24 h-16 xl:w-32 xl:h-24">
-                <div class = "h-8 xl:h-12 w-24 xl:w-32 flex gap-3 items-center justify-center border-b border-black">
-                    <p>?</p>
-                    <p class = "font-bold"></p>
+                <div class = "h-8 xl:h-12 w-24 xl:w-32 border-b border-black flex items-center gap-2">
+                    <p class = "font-bold border-r border-black h-8 xl:h-12 w-8 xl:w-12 flex justify-center items-center"></p>
+                    <p class = "">?</p>
                 </div>
-                <div class = "h-8 xl:h-12 w-24 xl:w-32 flex gap-3 items-center justify-center">
-                    <p>?</p>
-                    <p class = "font-bold"></p>
+                <div class = "h-8 xl:h-12 w-24 xl:w-32 flex items-center gap-2">
+                    <p class = "font-bold border-r border-black h-8 xl:h-12 w-8 xl:w-12 flex justify-center items-center"></p>
+                    <p class = "">?</p>
                 </div>
             </div>
         </div>
@@ -252,13 +271,13 @@ const tournoiVide = `
             </div>
 
             <div class="flex flex-col justify-center items-center text-center bg-white rounded-r w-24 h-16 xl:w-32 xl:h-24">
-                <div class = "h-8 xl:h-12 w-24 xl:w-32 flex gap-3 items-center justify-center border-b border-black">
-                    <p>?</p>
-                    <p class = "font-bold"></p>
+                <div class = "h-8 xl:h-12 w-24 xl:w-32 border-b border-black flex items-center gap-2">
+                    <p class = "font-bold border-r border-black h-8 xl:h-12 w-8 xl:w-12 flex justify-center items-center"></p>
+                    <p class = "">?</p>
                 </div>
-                <div class = "h-8 xl:h-12 w-24 xl:w-32 flex gap-3 items-center justify-center">
-                    <p>?</p>
-                    <p class = "font-bold"></p>
+                <div class = "h-8 xl:h-12 w-24 xl:w-32 flex items-center gap-2">
+                    <p class = "font-bold border-r border-black h-8 xl:h-12 w-8 xl:w-12 flex justify-center items-center"></p>
+                    <p class = "">?</p>
                 </div>
             </div>
         </div>
