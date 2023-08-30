@@ -11,35 +11,35 @@
         <script src = "script.js" defer></script>
     </head>
 
-    <body class = "bg-gray-300">
-        <main class = "h-screen bg-no-repeat bg-cover bg-center flex items-center justify-center">
-            <a href = "#bracket" class = "flex items-center justify-center">
-                <img id = "logo" class = "w-[50%] mt-32" src = "https://media.discordapp.net/attachments/814147584054657026/1141409007781822555/cup.png?width=547&height=676" alt = "logo">
+    <body>
+        <main>
+            <a href = "#tournaments">
+                <img id = "logo" src = "https://media.discordapp.net/attachments/814147584054657026/1141409007781822555/cup.png?width=547&height=676" alt = "logo">
             </a>
         </main>
 
-        <div id = "bracket" class = "pb-20 pt-10 bg-center bg-no-repeat bg-cover mt-10">
+        <div id = "tournaments">
             <div class = "header">
-                <label class = "tournoi-select flex items-center">
-                    <select class = "bg-transparent form-control text-4xl text-white font-bold px-2 cursor-pointer">
+                <label id = "select-label">
+                    <select class = "form-control">
                         <option value = "2023">Tournoi 2023</option>
                         <option value = "2022">Tournoi 2022</option>
                     </select>
-                    <svg class = "dropdown-icon" width = "32" height = "32" viewBox = "0 0 448 512" xmlns = "http://www.w3.org/2000/svg">
-                        <path fill = "#ffffff" d = "M20.5 92.5l203 204.1c4.7 4.7 12.3 4.7 17 0l203-204.1c9.4-9.4 2.7-25.6-10.5-25.6H31c-13.2 0-20 16.2-10.5 25.6z"/>
+                    <svg width = "32" height = "32" fill = "#FFFFFF" viewBox = "0 0 16 16">
+                        <path d = "M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
                     </svg>
                 </label>
             </div>
 
-            <section class = "flex flex-col tournament gap-5 py-5"></section>
+            <section id = "tournament"></section>
         </div>
 
-        <section id = "galerie" class = "bg-gray-300">
+        <section id = "galerie">
             <div class = "header">
-                <h3 class = "text-4xl font-bold">Galerie</h3>
+                <h3 id = "galerie-header">Galerie</h3>
             </div>
 
-            <section id = "container" class = "overflow-hidden">
+            <section id = "container">
                 <div class = "handle left-handle">
                     <div class = "text">&#8249;</div>
                 </div>
@@ -71,7 +71,7 @@
                 </div>
             </section>
 
-            <div id = "progress-bar" class = "flex gap-3 justify-center py-8"></div>
+            <div id = "progress-bar"></div>
         </section>
 
         <div id = "image-viewer" class = "invisible">
@@ -79,26 +79,26 @@
             <button id = "close-button">Fermer</button>
         </div>
 
-        <section class = "teammaker bg-center bg-cover bg-no-repeat">
+        <section class = "teammaker">
             <div class = "header">
-                <h3 class = "text-4xl text-white font-bold">Composition équipes</h3>
+                <h3 id = "teammaker-header">Composition équipes</h3>
             </div>
 
-            <form class = "flex flex-col items-start">
+            <form>
                 <label>
-                    <textarea class = "w-96 h-36 p-2 rounded" placeholder = "Veuillez entrer les noms des compétiteurs ligne par ligne"></textarea>
+                    <textarea placeholder = "Veuillez entrer les noms des compétiteurs ligne par ligne"></textarea>
                 </label>
 
                 <label>
-                    <input class = "py-1 px-2 bg-white rounded" type = "submit" value = "Valider"/>
+                    <input id = "submit-form" type = "submit" value = "Valider"/>
                 </label>
             </form>
 
-            <div id = "teams" class = "flex">
-                <div class = "pr-4 flex flex-col text-white"></div>
-                <div class = "pr-4 flex flex-col text-white"></div>
-                <div class = "pr-4 flex flex-col text-white"></div>
-                <div class = "pr-4 flex flex-col text-white"></div>
+            <div id = "teams">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
             </div>
         </section>
     </body>
