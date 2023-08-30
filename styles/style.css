@@ -32,22 +32,28 @@ body {
 /*</editor-fold>*/
 
 /*<editor-fold desc="main">*/
-main {
-    display: flex;
-    height: 100vh;
-    align-items: center;
-    justify-content: center;
+#main-image {
+    width: 100%;
+}
 
-    background-image: url("https://media.discordapp.net/attachments/814147584054657026/1141375312857411604/IMG_3438.JPG?width=1056&height=657");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+#logo-container {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+#logo-bg {
+    width: 100%;
 }
 
 #logo {
-    width: 50%;
+    position: absolute;
     margin: auto;
-    /*class = "w-[50%] mt-32"*/
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    width: 30%;
 }
 /*</editor-fold>*/
 
