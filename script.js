@@ -334,11 +334,15 @@ function calculateProgressBar(progressBar) {
 
     progressItems.forEach((item, index) => {
         item.addEventListener("click", () => {
+            clearInterval(intervalID);
+
             let sliderIndex = parseInt(getComputedStyle(slider).getPropertyValue("--slider-index"));
 
             slider.style.setProperty("--slider-index", index);
             progressBar.children[sliderIndex].classList.remove("active");
             progressBar.children[index].classList.add("active");
+
+            startCarousel();
         });
     });
 }
