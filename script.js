@@ -55,7 +55,7 @@ const teams2023 = [
 ];
 const teams2022 = [
     {
-        "Les Bob Skoda": {
+        "équipe 1": {
             membres: [
                 "Cédric",
                 "Emma",
@@ -73,7 +73,7 @@ const teams2022 = [
         }
     },
     {
-        "VW Multivan": {
+        "équipe 2": {
             membres: [
                 "Jean-Phillipe",
                 "Maëva",
