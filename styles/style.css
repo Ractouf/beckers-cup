@@ -256,7 +256,13 @@ body {
 /*</editor-fold>*/
 
 /*<editor-fold desc="team-score">*/
-#teams-scores {
+#teams-scores h2 {
+    font-weight: bold;
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+}
+
+#teams-scores-div {
     display: flex;
 }
 
@@ -266,16 +272,16 @@ body {
     gap: 10rem;
     padding-block: 1rem;
     width: 50vw;
-    background-color: rgb(128, 128, 128);
 }
 
 .team {
-    padding-bottom: 2rem;
+    padding-bottom: 5rem;
 }
 
 .team h3 {
     padding-bottom: .5rem;
 
+    color: var(--bg-green);
     font-weight: bold;
     font-size: 1.25rem;
     line-height: 1.75rem;
@@ -287,7 +293,6 @@ body {
 
 #scores {
     width: 50vw;
-    background-color: gainsboro;
 }
 
 #scores .header {
@@ -300,6 +305,7 @@ table {
 }
 
 th {
+    color: var(--bg-green);
     font-size: 1.25rem;
     line-height: 1.75rem;
 }
@@ -311,6 +317,11 @@ td {
 
 th, td {
     padding: .75rem;
+}
+
+.result-svg {
+    width: 5rem;
+    height: 5rem;
 }
 /*</editor-fold>*/
 
