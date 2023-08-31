@@ -147,12 +147,8 @@ body {
 }
 
 .match-teams-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     width: 6rem;
-    height: 4rem;
+    min-height: 4rem;
 
     background-color: white;
 
@@ -165,7 +161,7 @@ body {
     align-items: center;
     gap: .25rem;
     width: 6rem;
-    height: 2rem;
+    min-height: 2rem;
 }
 
 .match-top-team-container {
@@ -174,14 +170,25 @@ body {
 
 .match-team-score {
     display: flex;
-    justify-content: center;
     align-items: center;
-    width: 1rem;
+    justify-content: center;
+    min-width: 1rem;
     height: 2rem;
 
-    font-weight: bold;
+    text-align: center;
 
-    border-right: solid black 1px;
+    font-weight: bold;
+}
+
+.teams {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    min-height: 2rem;
+    text-align: center;
+
+    border-left: solid black 1px;
 }
 
 #vertical-spacer {
@@ -220,17 +227,21 @@ body {
 
     .match-teams-container {
         width: 8rem;
-        height: 6rem;
+        min-height: 6rem;
     }
 
     .match-top-team-container, .match-bottom-team-container {
         width: 8rem;
-        height: 3rem;
+        min-height: 3rem;
     }
 
     .match-team-score {
         width: 2rem;
-        height: 3rem;
+        min-height: 3rem;
+    }
+
+    .teams {
+        min-height: 3rem;
     }
 
     #vertical-spacer {
