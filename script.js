@@ -6,163 +6,263 @@ const largeImage = document.querySelector("#large-image");
 const closeButton = document.querySelector("#close-button");
 const form = document.querySelector("form");
 const selectElement = document.querySelector("select");
-const tournoi2023 = `
-    <div id = "finales">
-        <div class = "match-container">
-            <div class = "match-text-container">
-                <p class = "match-text">FINALE</p>
+const teamsScores = document.querySelector("#teams-scores");
+const teams2023 = [
+    {
+        "?": {
+            membres: [
+            ],
+            scores: [
+            ],
+            indexes: [
+                4
+            ]
+        }
+    },
+    {
+        "?": {
+            membres: [
+            ],
+            scores: [
+            ],
+            indexes: [
+                5
+            ]
+        }
+    },
+    {
+        "?": {
+            membres: [
+            ],
+            scores: [
+            ],
+            indexes: [
+                6
+            ]
+        }
+    },
+    {
+        "?": {
+            membres: [
+            ],
+            scores: [
+            ],
+            indexes: [
+                7
+            ]
+        }
+    },
+];
+const teams2022 = [
+    {
+        "equipe1": {
+            membres: [
+                "Cédric",
+                "Emma",
+                "Vincent",
+                "Stéphanie",
+            ],
+            scores: [
+                8,
+                9
+            ],
+            indexes: [
+                4,
+                0
+            ]
+        }
+    },
+    {
+        "equipe2": {
+            membres: [
+                "Jean-Phillipe",
+                "Maëva",
+                "Pierre",
+                "Françoise",
+            ],
+            scores: [
+                5,
+                8
+            ],
+            indexes: [
+                5,
+                3
+            ]
+        }
+    },
+    {
+        "equipe3": {
+            membres: [
+                "Maxence",
+                "Marine",
+                "Lucie",
+                "François",
+            ],
+            scores: [
+                3,
+                5
+            ],
+            indexes: [
+                6,
+                2
+            ]
+        }
+    },
+    {
+        "equipe4": {
+            membres: [
+                "Kenza",
+                "Brieuc",
+                "Mamy",
+                "Lucia",
+            ],
+            scores: [
+                8,
+                5
+            ],
+            indexes: [
+                7,
+                1
+            ]
+        }
+    },
+];
+const teamsEmpty = `
+    <div id = "teams">
+        <div>
+            <div class = "team">
+                <h3></h3>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
             </div>
-
-            <div class = "match-teams-container">
-                <div class = "match-top-team-container">
-                    <p class = "match-team-score"></p>
-                    <p>?</p>
-                </div>
-                <div class = "match-bottom-team-container">
-                    <p class = "match-team-score"></p>
-                    <p>?</p>
-                </div>
+            <div class = "team">
+                <h3></h3>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
             </div>
         </div>
-        <div class = "match-container consolation-game">
-            <div class = "match-text-container">
-                <p class = "match-text">P.FINALE</p>
+        <div>
+            <div class = "team">
+                <h3></h3>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
             </div>
-
-            <div class = "match-teams-container">
-                <div class = "match-top-team-container">
-                    <p class = "match-team-score"></p>
-                    <p>?</p>
-                </div>
-                <div class = "match-bottom-team-container">
-                    <p class = "match-team-score"></p>
-                    <p>?</p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div id = "vertical-spacer"></div>
-
-    <div class = "semi">
-        <div class = "match-container">
-            <div class = "match-text-container">
-                <p class = "match-text">DEMI</p>
-            </div>
-
-            <div class = "match-teams-container">
-                <div class = "match-top-team-container">
-                    <p class = "match-team-score"></p>
-                    <p>?</p>
-                </div>
-                <div class = "match-bottom-team-container">
-                    <p class = "match-team-score"></p>
-                    <p>?</p>
-                </div>
-            </div>
-        </div>
-
-        <div id = "horizontal-spacer-container">
-            <div></div>
-            <div></div>
-        </div>
-
-        <div class = "match-container">
-            <div class = "match-text-container">
-                <p class = "match-text">DEMI</p>
-            </div>
-
-            <div class = "match-teams-container">
-                <div class = "match-top-team-container">
-                    <p class = "match-team-score"></p>
-                    <p>?</p>
-                </div>
-                <div class = "match-bottom-team-container">
-                    <p class = "match-team-score"></p>
-                    <p>?</p>
-                </div>
+            <div class = "team">
+                <h3></h3>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
             </div>
         </div>
     </div>`;
-const tournoi2022 = `
-    <div id = "finales">
-        <div class = "match-container">
-            <div class = "match-text-container">
-                <p class = "match-text">FINALE</p>
-            </div>
-
-            <div class = "match-teams-container">
-                <div class = "match-top-team-container">
-                    <p class = "match-team-score">9</p>
-                    <p>équipe1</p>
-                </div>
-                <div class = "match-bottom-team-container">
-                    <p class = "match-team-score">5</p>
-                    <p>équipe4</p>
-                </div>
-            </div>
-        </div>
-        <div class = "match-container consolation-game">
-            <div class = "match-text-container">
-                <p class = "match-text">P.FINALE</p>
-            </div>
-
-            <div class = "match-teams-container">
-                <div class = "match-top-team-container">
-                    <p class = "match-team-score">5</p>
-                    <p>équipe3</p>
-                </div>
-                <div class = "match-bottom-team-container">
-                    <p class = "match-team-score">8</p>
-                    <p>équipe2</p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div id = "vertical-spacer"></div>
-
-    <div class = "semi">
-        <div class = "match-container">
-            <div class = "match-text-container">
-                <p class = "match-text">DEMI</p>
-            </div>
-
-            <div class = "match-teams-container">
-                <div class = "match-top-team-container">
-                    <p class = "match-team-score">8</p>
-                    <p>équipe1</p>
-                </div>
-                <div class = "match-bottom-team-container">
-                    <p class = "match-team-score">5</p>
-                    <p>équipe2</p>
-                </div>
-            </div>
-        </div>
-
-        <div id = "horizontal-spacer-container">
-            <div></div>
-            <div></div>
-        </div>
-
-        <div class = "match-container">
-            <div class = "match-text-container">
-                <p class = "match-text">DEMI</p>
-            </div>
-
-            <div class = "match-teams-container">
-                <div class = "match-top-team-container">
-                    <p class = "match-team-score">3</p>
-                    <p>équipe3</p>
-                </div>
-                <div class = "match-bottom-team-container">
-                    <p class = "match-team-score">8</p>
-                    <p>équipe4</p>
-                </div>
-            </div>
-        </div>
+const scoresEmpty = `
+    <div id = "scores">
+        <table>
+            <thead>
+                <tr>
+                    <th>Position</th>
+                    <th>Équipe</th>
+                    <th>Points</th>
+                </tr>
+            </thead>
+            
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td></td>
+                    <td></td>
+                    <td>
+                        <svg viewBox="0 0 120 120">
+                            <style type="text/css">
+                                .st0{fill:#E24255;}
+                                .st1{fill:#61b6d5;}
+                                .st2{fill:#34a2ce;}
+                                .st3{fill:#FFFFFF;}
+                            </style>
+                            <g>
+                                <polygon class="st0" points="79.7,45.6 60,55.5 40.3,45.6 15.9,94.3 31.1,92.8 38.9,105.9 60,63.9 81.1,105.9 88.9,92.8    104.1,94.3  "/>
+                                <circle class="st1" cx="60" cy="46.4" r="32.2"/>
+                                <circle class="st2" cx="60" cy="46.4" r="25.3"/>
+                                <path class="st3" d="M61.2,31.2l4.2,8.4c0.2,0.4,0.6,0.7,1,0.8l9.3,1.4c1.1,0.2,1.6,1.5,0.8,2.3l-6.7,6.6c-0.3,0.3-0.5,0.8-0.4,1.2   l1.6,9.3c0.2,1.1-1,2-2,1.4l-8.3-4.4c-0.4-0.2-0.9-0.2-1.3,0L51,62.6c-1,0.5-2.2-0.3-2-1.4l1.6-9.3c0.1-0.4-0.1-0.9-0.4-1.2   l-6.7-6.6c-0.8-0.8-0.4-2.2,0.8-2.3l9.3-1.4c0.4-0.1,0.8-0.3,1-0.8l4.2-8.4C59.3,30.2,60.7,30.2,61.2,31.2z"/>
+                            </g>
+                        </svg>
+                    </td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td></td>
+                    <td></td>
+                    <td>
+                        <svg viewBox="0 0 120 120">
+                            <style type="text/css">
+                                .st4{fill:#E24255;}
+                                .st5{fill:#FFC54D;}
+                                .st6{fill:#E8B04B;}
+                                .st7{fill:#FFFFFF;}
+                            </style>
+                            <g>
+                                <polygon class="st4" points="79.7,45.6 60,55.5 40.3,45.6 15.9,94.3 31.1,92.8 38.9,105.9 60,63.9 81.1,105.9 88.9,92.8    104.1,94.3  "/>
+                                <circle class="st5" cx="60" cy="46.4" r="32.2"/>
+                                <circle class="st6" cx="60" cy="46.4" r="25.3"/>
+                                <path class="st7" d="M61.2,31.2l4.2,8.4c0.2,0.4,0.6,0.7,1,0.8l9.3,1.4c1.1,0.2,1.6,1.5,0.8,2.3l-6.7,6.6c-0.3,0.3-0.5,0.8-0.4,1.2   l1.6,9.3c0.2,1.1-1,2-2,1.4l-8.3-4.4c-0.4-0.2-0.9-0.2-1.3,0L51,62.6c-1,0.5-2.2-0.3-2-1.4l1.6-9.3c0.1-0.4-0.1-0.9-0.4-1.2   l-6.7-6.6c-0.8-0.8-0.4-2.2,0.8-2.3l9.3-1.4c0.4-0.1,0.8-0.3,1-0.8l4.2-8.4C59.3,30.2,60.7,30.2,61.2,31.2z"/>
+                            </g>
+                        </svg>
+                    </td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td></td>
+                    <td></td>
+                    <td>
+                        <svg viewBox="0 0 120 120">
+                            <style type="text/css">
+                                .st8{fill:#FFBF4B;}
+                                .st9{fill:#EDEDED;}
+                                .st10{fill:#BCBCBC;}
+                                .st11{fill:#FFFFFF;}
+                            </style>
+                            <g>
+                                <polygon class="st8" points="79.7,45.6 60,55.5 40.3,45.6 15.9,94.3 31.1,92.8 38.9,105.9 60,63.9 81.1,105.9 88.9,92.8    104.1,94.3  "/>
+                                <circle class="st9" cx="60" cy="46.4" r="32.2"/>
+                                <circle class="st10" cx="60" cy="46.4" r="25.3"/>
+                                <path class="st11" d="M61.2,31.2l4.2,8.4c0.2,0.4,0.6,0.7,1,0.8l9.3,1.4c1.1,0.2,1.6,1.5,0.8,2.3l-6.7,6.6c-0.3,0.3-0.5,0.8-0.4,1.2   l1.6,9.3c0.2,1.1-1,2-2,1.4l-8.3-4.4c-0.4-0.2-0.9-0.2-1.3,0L51,62.6c-1,0.5-2.2-0.3-2-1.4l1.6-9.3c0.1-0.4-0.1-0.9-0.4-1.2   l-6.7-6.6c-0.8-0.8-0.4-2.2,0.8-2.3l9.3-1.4c0.4-0.1,0.8-0.3,1-0.8l4.2-8.4C59.3,30.2,60.7,30.2,61.2,31.2z"/>
+                            </g>
+                        </svg>
+                    </td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td></td>
+                    <td></td>
+                    <td>
+                        <svg viewBox="0 0 120 120">
+                            <style type="text/css">
+                                \t.st12{fill:#C4C4C4;}
+                                \t.st13{fill:#E5B97F;}
+                                \t.st14{fill:#C19A6B;}
+                                \t.st15{fill:#FFFFFF;}
+                            </style>
+                            <g>
+                                <polygon class="st12" points="79.7,45.6 60,55.5 40.3,45.6 15.9,94.3 31.1,92.8 38.9,105.9 60,63.9 81.1,105.9 88.9,92.8    104.1,94.3  "/>
+                                <circle class="st13" cx="60" cy="46.4" r="32.2"/>
+                                <circle class="st14" cx="60" cy="46.4" r="25.3"/>
+                                <path class="st15" d="M61.2,31.2l4.2,8.4c0.2,0.4,0.6,0.7,1,0.8l9.3,1.4c1.1,0.2,1.6,1.5,0.8,2.3l-6.7,6.6c-0.3,0.3-0.5,0.8-0.4,1.2   l1.6,9.3c0.2,1.1-1,2-2,1.4l-8.3-4.4c-0.4-0.2-0.9-0.2-1.3,0L51,62.6c-1,0.5-2.2-0.3-2-1.4l1.6-9.3c0.1-0.4-0.1-0.9-0.4-1.2   l-6.7-6.6c-0.8-0.8-0.4-2.2,0.8-2.3l9.3-1.4c0.4-0.1,0.8-0.3,1-0.8l4.2-8.4C59.3,30.2,60.7,30.2,61.2,31.2z"/>
+                            </g>
+                        </svg>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        
     </div>`;
-const tournoiVide = `
+const tournoiEmpty = `
     <div id = "finales">
         <div class = "match-container">
             <div class = "match-text-container">
@@ -171,12 +271,12 @@ const tournoiVide = `
 
             <div class = "match-teams-container">
                 <div class = "match-top-team-container">
-                    <p class = "match-team-score"></p>
-                    <p>?</p>
+                    <p class = "match-team-score scores"></p>
+                    <p class = "teams">?</p>
                 </div>
                 <div class = "match-bottom-team-container">
-                    <p class = "match-team-score"></p>
-                    <p>?</p>
+                    <p class = "match-team-score scores"></p>
+                    <p class = "teams">?</p>
                 </div>
             </div>
         </div>
@@ -187,12 +287,12 @@ const tournoiVide = `
 
             <div class = "match-teams-container">
                 <div class = "match-top-team-container">
-                    <p class = "match-team-score"></p>
-                    <p>?</p>
+                    <p class = "match-team-score scores"></p>
+                    <p class = "teams">?</p>
                 </div>
                 <div class = "match-bottom-team-container">
-                    <p class = "match-team-score"></p>
-                    <p>?</p>
+                    <p class = "match-team-score scores"></p>
+                    <p class = "teams">?</p>
                 </div>
             </div>
         </div>
@@ -208,12 +308,12 @@ const tournoiVide = `
 
             <div class = "match-teams-container">
                 <div class = "match-top-team-container">
-                    <p class = "match-team-score"></p>
-                    <p>?</p>
+                    <p class = "match-team-score scores"></p>
+                    <p class = "teams">?</p>
                 </div>
                 <div class = "match-bottom-team-container">
-                    <p class = "match-team-score"></p>
-                    <p>?</p>
+                    <p class = "match-team-score scores"></p>
+                    <p class = "teams">?</p>
                 </div>
             </div>
         </div>
@@ -230,12 +330,12 @@ const tournoiVide = `
 
             <div class = "match-teams-container">
                 <div class = "match-top-team-container">
-                    <p class = "match-team-score"></p>
-                    <p>?</p>
+                    <p class = "match-team-score scores"></p>
+                    <p class = "teams">?</p>
                 </div>
                 <div class = "match-bottom-team-container">
-                    <p class = "match-team-score"></p>
-                    <p>?</p>
+                    <p class = "match-team-score scores"></p>
+                    <p class = "teams">?</p>
                 </div>
             </div>
         </div>
@@ -250,12 +350,61 @@ function chooseTournament() {
 
     const tournoi = document.querySelector("#tournament");
 
+    tournoi.innerHTML = "";
+    tournoi.innerHTML = tournoiEmpty;
+    teamsScores.innerHTML = "";
+
+    const scores = document.querySelectorAll(".scores");
+    const teams = document.querySelectorAll(".teams");
+
     if (selectedOption === '2023') {
-        tournoi.innerHTML = "";
-        tournoi.innerHTML = tournoi2023;
+        teams2023.forEach((team, index) => {
+            const teamName = Object.keys(team)[0];
+            const teamData = team[teamName];
+
+            scores[teamData.indexes[0]].textContent = teamData.scores[0];
+            teams[teamData.indexes[0]].textContent = teamName;
+
+            if (teamData.indexes[1] !== undefined) {
+                scores[teamData.indexes[1]].textContent = teamData.scores[1];
+                teams[teamData.indexes[1]].textContent = teamName;
+            }
+        });
     } else if (selectedOption === '2022') {
-        tournoi.innerHTML = "";
-        tournoi.innerHTML = tournoi2022;
+        teamsScores.innerHTML = teamsEmpty;
+        teamsScores.innerHTML += scoresEmpty;
+
+        let results = [[],[],[],[]];
+        teams2022.forEach((team, index) => {
+            const teamName = Object.keys(team)[0];
+            const teamData = team[teamName];
+
+            scores[teamData.indexes[0]].textContent = teamData.scores[0];
+            teams[teamData.indexes[0]].textContent = teamName;
+
+            if (teamData.indexes[1] !== undefined) {
+                scores[teamData.indexes[1]].textContent = teamData.scores[1];
+                teams[teamData.indexes[1]].textContent = teamName;
+            }
+
+            const teamContainer = document.querySelectorAll(".team")[index];
+            teamContainer.children[0].textContent = teamName;
+
+            teamData.membres.forEach((member, memberIndex) => {
+                teamContainer.children[memberIndex + 1].textContent = member;
+            });
+
+            results[index][0] = teamName;
+            results[index][1] = teamData.scores[1] + teamData.scores[0];
+        });
+
+        results.sort((a, b) => a[1] - b[1]).reverse();
+
+        const tableBody = document.querySelector("tbody");
+        results.forEach((result, index) => {
+            tableBody.children[index].children[1].textContent = results[index][0];
+            tableBody.children[index].children[2].textContent = results[index][1];
+        });
     }
 }
 selectElement.addEventListener("change", chooseTournament);
@@ -436,7 +585,7 @@ form.addEventListener("submit", (e) => {
 
     const textArea = document.querySelector("textarea");
     const arrayOfLines = textArea.value.split("\n");
-    const teamsElements = document.querySelector("#teams").children;
+    const teamsElements = document.querySelector("#create-team").children;
 
     for (let i = 0; i < 4; i++) {
         teamsElements[i].textContent = "";

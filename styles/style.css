@@ -10,7 +10,7 @@
     box-sizing: border-box;
 }
 
-.header, form, #teams {
+.header, form, #create-team {
     padding: 1rem calc(var(--img-gap) * 2 + var(--handle-size));
 }
 /*</editor-fold>*/
@@ -44,6 +44,7 @@ body {
 
 #logo-bg {
     width: 100%;
+    margin-bottom: 4.5rem;
 }
 
 #logo {
@@ -254,6 +255,65 @@ body {
 }
 /*</editor-fold>*/
 
+/*<editor-fold desc="team-score">*/
+#teams-scores {
+    display: flex;
+}
+
+#teams {
+    display: flex;
+    justify-content: center;
+    gap: 10rem;
+    padding-block: 1rem;
+    width: 50vw;
+    background-color: rgb(128, 128, 128);
+}
+
+.team {
+    padding-bottom: 2rem;
+}
+
+.team h3 {
+    padding-bottom: .5rem;
+
+    font-weight: bold;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+}
+
+.team p {
+   padding-left: 1rem;
+}
+
+#scores {
+    width: 50vw;
+    background-color: gainsboro;
+}
+
+#scores .header {
+    display: flex;
+}
+
+table {
+    width: 100%;
+    text-align: left;
+}
+
+th {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+}
+
+td {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+}
+
+th, td {
+    padding: .75rem;
+}
+/*</editor-fold>*/
+
 /*<editor-fold desc="carousel">*/
 #galerie-header {
     font-weight: bold;
@@ -398,7 +458,7 @@ textarea {
     border-radius: 0.25rem;
 }
 
-#teams {
+#create-team {
     display: flex;
     gap: 1rem;
 
