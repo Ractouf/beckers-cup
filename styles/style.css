@@ -176,7 +176,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 2rem;
+    width: 1rem;
     height: 2rem;
 
     font-weight: bold;
@@ -229,7 +229,7 @@ body {
     }
 
     .match-team-score {
-        width: 3rem;
+        width: 2rem;
         height: 3rem;
     }
 
