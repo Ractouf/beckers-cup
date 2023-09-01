@@ -344,6 +344,50 @@ const resultsEmpty = `
 let intervalID;
 
 /**
+ * @param year to display
+ *  Fills the tournament results based on year.
+ */
+function displayResult(year) {
+    const scores = document.querySelectorAll(".scores");
+    const teams = document.querySelectorAll(".teams");
+
+    teamsScores.innerHTML = resultsEmpty;
+
+    let results = [[],[],[],[]];
+
+    year.forEach((team, index) => {
+        const teamName = Object.keys(team)[0];
+        const teamData = team[teamName];
+
+        scores[teamData.indexes[0]].textContent = teamData.scores[0];
+        teams[teamData.indexes[0]].textContent = teamName;
+
+        if (teamData.indexes[1] !== undefined) {
+            scores[teamData.indexes[1]].textContent = teamData.scores[1];
+            teams[teamData.indexes[1]].textContent = teamName;
+        }
+
+        const teamContainer = document.querySelectorAll(".team")[index];
+        teamContainer.children[0].textContent = teamName;
+
+        teamData.membres.forEach((member, memberIndex) => {
+            teamContainer.children[memberIndex + 1].textContent = member;
+        });
+
+        results[index][0] = teamName;
+        results[index][1] = teamData.scores[1] + teamData.scores[0];
+    });
+
+    results.sort((a, b) => a[1] - b[1]).reverse();
+
+    const tableBody = document.querySelector("tbody");
+    results.forEach((result, index) => {
+        tableBody.children[index].children[1].textContent = results[index][0];
+        tableBody.children[index].children[2].textContent = results[index][1];
+    });
+}
+
+/**
  * Displays the tournament based on the <select> value.
  */
 function chooseTournament() {
@@ -370,22 +414,6 @@ function chooseTournament() {
                 scores[teamData.indexes[1]].textContent = teamData.scores[1];
                 teams[teamData.indexes[1]].textContent = teamName;
             }
-        });
-    } else if (selectedOption === '2022') {
-        teamsScores.innerHTML = resultsEmpty;
-
-        let results = [[],[],[],[]];
-        teams2022.forEach((team, index) => {
-            const teamName = Object.keys(team)[0];
-            const teamData = team[teamName];
-
-            scores[teamData.indexes[0]].textContent = teamData.scores[0];
-            teams[teamData.indexes[0]].textContent = teamName;
-
-            if (teamData.indexes[1] !== undefined) {
-                scores[teamData.indexes[1]].textContent = teamData.scores[1];
-                teams[teamData.indexes[1]].textContent = teamName;
-            }
 
             const teamContainer = document.querySelectorAll(".team")[index];
             teamContainer.children[0].textContent = teamName;
@@ -393,18 +421,9 @@ function chooseTournament() {
             teamData.membres.forEach((member, memberIndex) => {
                 teamContainer.children[memberIndex + 1].textContent = member;
             });
-
-            results[index][0] = teamName;
-            results[index][1] = teamData.scores[1] + teamData.scores[0];
         });
-
-        results.sort((a, b) => a[1] - b[1]).reverse();
-
-        const tableBody = document.querySelector("tbody");
-        results.forEach((result, index) => {
-            tableBody.children[index].children[1].textContent = results[index][0];
-            tableBody.children[index].children[2].textContent = results[index][1];
-        });
+    } else if (selectedOption === '2022') {
+        displayResult(teams2022);
     }
 }
 selectElement.addEventListener("change", chooseTournament);
