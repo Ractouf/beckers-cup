@@ -55,7 +55,7 @@ const teams2023 = [
 ];
 const teams2022 = [
     {
-        "équipe 1": {
+        "Glasses": {
             membres: [
                 "Cédric",
                 "Emma",
@@ -73,7 +73,7 @@ const teams2022 = [
         }
     },
     {
-        "équipe 2": {
+        "Skoda": {
             membres: [
                 "Jean-Phillipe",
                 "Maëva",
@@ -91,7 +91,7 @@ const teams2022 = [
         }
     },
     {
-        "équipe 3": {
+        "Sangliers": {
             membres: [
                 "Maxence",
                 "Marine",
@@ -109,7 +109,7 @@ const teams2022 = [
         }
     },
     {
-        "équipe 4": {
+        "Vanupieds": {
             membres: [
                 "Kenza",
                 "Brieuc",
