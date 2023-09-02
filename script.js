@@ -11,6 +11,10 @@ const teams2023 = [
     {
         "?": {
             membres: [
+                "François",
+                "Maëva",
+                "Cédric",
+                "Mamy"
             ],
             scores: [
             ],
@@ -22,6 +26,10 @@ const teams2023 = [
     {
         "?": {
             membres: [
+                "Marine",
+                "Pierre",
+                "Jean-Phillipe",
+                "Lucia"
             ],
             scores: [
             ],
@@ -33,6 +41,10 @@ const teams2023 = [
     {
         "?": {
             membres: [
+                "Emma",
+                "Lucie",
+                "Stéphanie",
+                "Françoise"
             ],
             scores: [
             ],
@@ -44,6 +56,9 @@ const teams2023 = [
     {
         "?": {
             membres: [
+                "Kenza",
+                "Brieuc",
+                "Vincent"
             ],
             scores: [
             ],
