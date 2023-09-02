@@ -17,9 +17,11 @@ const teams2023 = [
                 "Mamy"
             ],
             scores: [
+                5
             ],
             indexes: [
-                4
+                4,
+                2
             ]
         }
     },
@@ -32,9 +34,11 @@ const teams2023 = [
                 "Lucia"
             ],
             scores: [
+                8
             ],
             indexes: [
-                5
+                5,
+                0
             ]
         }
     },
@@ -390,7 +394,7 @@ function displayResult(year) {
         });
 
         results[index][0] = teamName;
-        results[index][1] = teamData.scores[1] + teamData.scores[0];
+        results[index][1] = (teamData.scores[1] ?? 0) + (teamData.scores[0] ?? 0);
     });
 
     results.sort((a, b) => a[1] - b[1]).reverse();
