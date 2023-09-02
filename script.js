@@ -414,29 +414,8 @@ function chooseTournament() {
     tournoi.innerHTML = tournoiEmpty;
     teamsScores.innerHTML = "";
 
-    const scores = document.querySelectorAll(".scores");
-    const teams = document.querySelectorAll(".teams");
-
     if (selectedOption === '2023') {
-        teams2023.forEach((team, index) => {
-            const teamName = Object.keys(team)[0];
-            const teamData = team[teamName];
-
-            scores[teamData.indexes[0]].textContent = teamData.scores[0];
-            teams[teamData.indexes[0]].textContent = teamName;
-
-            if (teamData.indexes[1] !== undefined) {
-                scores[teamData.indexes[1]].textContent = teamData.scores[1];
-                teams[teamData.indexes[1]].textContent = teamName;
-            }
-
-            const teamContainer = document.querySelectorAll(".team")[index];
-            teamContainer.children[0].textContent = teamName;
-
-            teamData.membres.forEach((member, memberIndex) => {
-                teamContainer.children[memberIndex + 1].textContent = member;
-            });
-        });
+        displayResult(teams2023);
     } else if (selectedOption === '2022') {
         displayResult(teams2022);
     }
