@@ -9,7 +9,7 @@ const selectElement = document.querySelector("select");
 const teamsScores = document.querySelector("#teams-scores");
 const teams2023 = [
     {
-        "?": {
+        "Les Espillons": {
             membres: [
                 "François",
                 "Maëva",
@@ -24,7 +24,7 @@ const teams2023 = [
         }
     },
     {
-        "Les équilibrés": {
+        "Les Équilibrés": {
             membres: [
                 "Marine",
                 "Pierre",
@@ -54,7 +54,7 @@ const teams2023 = [
         }
     },
     {
-        "?": {
+        "Les Birch": {
             membres: [
                 "Kenza",
                 "Brieuc",

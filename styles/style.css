@@ -147,7 +147,7 @@ body {
 }
 
 .match-teams-container {
-    width: 6rem;
+    min-width: 6rem;
     min-height: 4rem;
 
     background-color: white;
@@ -160,7 +160,7 @@ body {
     display: flex;
     align-items: center;
     gap: .25rem;
-    width: 6rem;
+    min-width: 6rem;
     min-height: 2rem;
 }
 
@@ -188,6 +188,7 @@ body {
     min-height: 2rem;
     text-align: center;
 
+    padding-inline: .5rem;
     border-left: solid black 1px;
 }
 
@@ -226,12 +227,12 @@ body {
     }
 
     .match-teams-container {
-        width: 8rem;
+        min-width: 8rem;
         min-height: 6rem;
     }
 
     .match-top-team-container, .match-bottom-team-container {
-        width: 8rem;
+        min-width: 8rem;
         min-height: 3rem;
     }
 
