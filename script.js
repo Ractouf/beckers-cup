@@ -51,9 +51,11 @@ const teams2023 = [
                 "Françoise"
             ],
             scores: [
+                0
             ],
             indexes: [
-                6
+                6,
+                3
             ]
         }
     },
@@ -65,9 +67,11 @@ const teams2023 = [
                 "Vincent"
             ],
             scores: [
+                9
             ],
             indexes: [
-                7
+                7,
+                1
             ]
         }
     },
