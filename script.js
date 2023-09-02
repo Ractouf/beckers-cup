@@ -24,7 +24,7 @@ const teams2023 = [
         }
     },
     {
-        "?": {
+        "Les équilibrés": {
             membres: [
                 "Marine",
                 "Pierre",
@@ -39,7 +39,7 @@ const teams2023 = [
         }
     },
     {
-        "?": {
+        "Les Mistinguettes": {
             membres: [
                 "Emma",
                 "Lucie",
