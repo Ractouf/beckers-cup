@@ -9,7 +9,7 @@ const selectElement = document.querySelector("select");
 const teamsScores = document.querySelector("#teams-scores");
 const teams2024 = [
     {
-        "Papillons de lumière": {
+        "Papillon de lumière": {
             membres: [
                 "Cédric",
                 "Lucia",
@@ -53,7 +53,7 @@ const teams2024 = [
         }
     },
     {
-        "?": {
+        "Les projecteurs": {
             membres: [
                 "Brieuc",
                 "Pierre",
