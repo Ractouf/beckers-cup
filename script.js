@@ -34,7 +34,8 @@ const teams2024 = [
                 "Stéphanie"
             ],
             scores: [
-                0
+                0,
+                1
             ],
             indexes: [
                 5,
