@@ -17,7 +17,8 @@ const teams2024 = [
                 "Vincent"
             ],
             scores: [
-                7
+                7,
+                6
             ],
             indexes: [
                 4,
@@ -51,6 +52,7 @@ const teams2024 = [
                 "Jean-Phillipe"
             ],
             scores: [
+                7,
                 7
             ],
             indexes: [
@@ -67,7 +69,8 @@ const teams2024 = [
                 "Mamy"
             ],
             scores: [
-                0
+                0,
+                7
             ],
             indexes: [
                 7,
