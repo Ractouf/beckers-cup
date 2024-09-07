@@ -7,6 +7,66 @@ const closeButton = document.querySelector("#close-button");
 const form = document.querySelector("form");
 const selectElement = document.querySelector("select");
 const teamsScores = document.querySelector("#teams-scores");
+const teams2024 = [
+    {
+        "?": {
+            membres: [
+                "Cédric",
+                "Lucia",
+                "Kenza",
+                "Vincent"
+            ],
+            scores: [
+            ],
+            indexes: [
+                4
+            ]
+        }
+    },
+    {
+        "Myrtilles": {
+            membres: [
+                "Françoise",
+                "François",
+                "Lucie",
+                "Stéphanie"
+            ],
+            scores: [
+            ],
+            indexes: [
+                5
+            ]
+        }
+    },
+    {
+        "El gato": {
+            membres: [
+                "Maëva",
+                "Marine",
+                "Jean-Phillipe"
+            ],
+            scores: [
+            ],
+            indexes: [
+                6
+            ]
+        }
+    },
+    {
+        "?": {
+            membres: [
+                "Brieuc",
+                "Pierre",
+                "Mamy"
+            ],
+            scores: [
+            ],
+            indexes: [
+                7
+            ]
+        }
+    },
+];
 const teams2023 = [
     {
         "Les Espillons": {
@@ -380,7 +440,7 @@ function displayResult(year) {
 
     teamsScores.innerHTML = resultsEmpty;
 
-    let results = [[],[],[],[]];
+    let results = [[], [], [], []];
 
     year.forEach((team, index) => {
         const teamName = Object.keys(team)[0];
@@ -426,7 +486,9 @@ function chooseTournament() {
     tournoi.innerHTML = tournoiEmpty;
     teamsScores.innerHTML = "";
 
-    if (selectedOption === '2023') {
+    if (selectedOption === '2024') {
+        displayResult(teams2024);
+    } else if (selectedOption === '2023') {
         displayResult(teams2023);
     } else if (selectedOption === '2022') {
         displayResult(teams2022);
