@@ -19,7 +19,7 @@ const teams2025 = [
             scores: [
             ],
             indexes: [
-                5,
+                4,
             ]
         }
     },
@@ -39,7 +39,7 @@ const teams2025 = [
         }
     },
     {
-        "El gato": {
+        "Les as": {
             membres: [
                 "Cédric",
                 "Mamy",
@@ -53,7 +53,7 @@ const teams2025 = [
         }
     },
     {
-        "Les projecteurs": {
+        "Les trois": {
             membres: [
                 "Jean-Phillipe",
                 "Lucia",
@@ -558,7 +558,9 @@ function chooseTournament() {
     tournoi.innerHTML = tournoiEmpty;
     teamsScores.innerHTML = "";
 
-    if (selectedOption === '2024') {
+    if (selectedOption === '2025') {
+        displayResult(teams2025);
+    } else if (selectedOption === '2024') {
         displayResult(teams2024);
     } else if (selectedOption === '2023') {
         displayResult(teams2023);
