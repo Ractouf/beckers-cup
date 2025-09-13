@@ -7,6 +7,66 @@ const closeButton = document.querySelector("#close-button");
 const form = document.querySelector("form");
 const selectElement = document.querySelector("select");
 const teamsScores = document.querySelector("#teams-scores");
+const teams2025 = [
+    {
+        "Pantofels": {
+            membres: [
+                "Marine",
+                "Françoise",
+                "Maeva",
+                "Pierre"
+            ],
+            scores: [
+            ],
+            indexes: [
+                5,
+            ]
+        }
+    },
+    {
+        "Les Remontadi": {
+            membres: [
+                "Brieuc",
+                "Lucie",
+                "François",
+                "Vincent"
+            ],
+            scores: [
+            ],
+            indexes: [
+                5,
+            ]
+        }
+    },
+    {
+        "El gato": {
+            membres: [
+                "Cédric",
+                "Mamy",
+                "Sylvie"
+            ],
+            scores: [
+            ],
+            indexes: [
+                6,
+            ]
+        }
+    },
+    {
+        "Les projecteurs": {
+            membres: [
+                "Jean-Phillipe",
+                "Lucia",
+                "Stéphanie"
+            ],
+            scores: [
+            ],
+            indexes: [
+                7,
+            ]
+        }
+    },
+];
 const teams2024 = [
     {
         "Papillon de lumière": {
