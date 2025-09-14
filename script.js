@@ -16,9 +16,11 @@ const teams2025 = [
                 "Pierre"
             ],
             scores: [
+                7
             ],
             indexes: [
                 4,
+                0
             ]
         }
     },
@@ -31,9 +33,11 @@ const teams2025 = [
                 "Vincent"
             ],
             scores: [
+                3
             ],
             indexes: [
                 5,
+                2
             ]
         }
     },
