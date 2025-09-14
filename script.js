@@ -49,9 +49,11 @@ const teams2025 = [
                 "Sylvie"
             ],
             scores: [
+                7
             ],
             indexes: [
                 6,
+                1
             ]
         }
     },
@@ -63,9 +65,11 @@ const teams2025 = [
                 "Stéphanie"
             ],
             scores: [
+                2
             ],
             indexes: [
                 7,
+                3
             ]
         }
     },
