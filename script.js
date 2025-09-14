@@ -12,7 +12,6 @@ const teams2025 = [
         "Pantofels": {
             membres: [
                 "Marine",
-                "Françoise",
                 "Maeva",
                 "Pierre"
             ],
