@@ -3,9 +3,9 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta content="Tournoi de pétanque Beckers" name="description">
     <meta content="Vandeputte François" name="author">
-    <!--        <meta name = "viewport" content = "width=device-width, initial-scale = 1.0">-->
     <title>Beckers Cup</title>
     <link href="styles/style.css" rel="stylesheet" type="text/css">
     <script src="https://cdn.tailwindcss.com"></script>
@@ -13,105 +13,111 @@
 </head>
 
 <body>
-    <main>
-        <!-- width=1056&height=657 -->
-        <img id="main-image" src="ressources/aspect-ratio/IMG_3438.JPG" alt="main" />
-
-        <div id="logo-container">
-            <!-- width=1168&height=657 -->
-            <img id="logo-bg" src="ressources/IMG_3452.JPG" alt="logo-bg">
-            <!-- width=483&height=597 -->
-            <img id="logo" src="ressources/cup-or.png" alt="logo">
+    <header id="hero">
+        <img id="main-image" src="ressources/aspect-ratio/IMG_3438.JPG" alt="Beckers Cup">
+        <div id="hero-content">
+            <img id="logo" src="ressources/cup-or.png" alt="Trophée Beckers Cup">
         </div>
-    </main>
+    </header>
 
-    <div id="tournaments">
-        <div class="header">
-            <label id="select-label">
-                <select class="form-control">
-                    <option value="2025" selected>Tournoi 2025</option>
-                    <option value="2024">Tournoi 2024</option>
-                    <option value="2023">Tournoi 2023</option>
-                    <option value="2022">Tournoi 2022</option>
-                </select>
-                <svg width="32" height="32" fill="#FFFFFF" viewBox="0 0 16 16">
-                    <path d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
-                </svg>
-            </label>
+    <nav id="main-nav">
+        <a href="#tournaments">Tournoi</a>
+        <a href="#galerie">Galerie</a>
+        <a href="#teammaker">Équipes</a>
+    </nav>
+
+    <section id="tournaments">
+        <div class="section-inner">
+            <div class="section-header">
+                <label id="select-label">
+                    <select class="form-control">
+                        <option value="2025" selected>Tournoi 2025</option>
+                        <option value="2024">Tournoi 2024</option>
+                        <option value="2023">Tournoi 2023</option>
+                        <option value="2022">Tournoi 2022</option>
+                    </select>
+                    <svg width="28" height="28" fill="currentColor" viewBox="0 0 16 16">
+                        <path d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                    </svg>
+                </label>
+            </div>
+            <div id="bracket-scroll">
+                <section id="tournament"></section>
+            </div>
         </div>
-
-        <section id="tournament"></section>
-    </div>
+    </section>
 
     <section id="teams-scores"></section>
 
     <section id="galerie">
-        <div class="header">
-            <h3 id="galerie-header">Galerie</h3>
+        <div class="section-inner">
+            <div class="section-header">
+                <h2>Galerie</h2>
+            </div>
         </div>
 
-        <section id="container">
+        <div id="container">
             <div class="handle left-handle">
                 <div class="text">&#8249;</div>
             </div>
 
             <div id="slider">
-                <img src="ressources/aspect-ratio/IMG_3449.JPG" alt="Image 3449">
-                <img src="ressources/aspect-ratio/IMG_3448.JPG" alt="Image 3448">
-                <img src="ressources/aspect-ratio/IMG_3447.JPG" alt="Image 3447">
-                <img src="ressources/aspect-ratio/IMG_3446.JPG" alt="Image 3446">
-                <img src="ressources/aspect-ratio/IMG_3444.JPG" alt="Image 3444">
-                <img src="ressources/aspect-ratio/IMG_3443.JPG" alt="Image 3443">
-                <img src="ressources/aspect-ratio/IMG_3442.JPG" alt="Image 3442">
-                <img src="ressources/aspect-ratio/IMG_3441.JPG" alt="Image 3441">
-                <img src="ressources/aspect-ratio/IMG_3440.JPG" alt="Image 3440">
-                <img src="ressources/aspect-ratio/IMG_3439.JPG" alt="Image 3439">
-                <img src="ressources/aspect-ratio/IMG_3437.JPG" alt="Image 3437">
-                <img src="ressources/aspect-ratio/IMG_3436.JPG" alt="Image 3436">
-                <img src="ressources/aspect-ratio/IMG_3435.JPG" alt="Image 3435">
-                <img src="ressources/aspect-ratio/IMG_3434.JPG" alt="Image 3434">
-                <img src="ressources/aspect-ratio/IMG_3433.JPG" alt="Image 3433">
-                <img src="ressources/aspect-ratio/IMG_3432.JPG" alt="Image 3432">
-                <img src="ressources/aspect-ratio/IMG_3430.JPG" alt="Image 3430">
-                <img src="ressources/aspect-ratio/IMG_3429.JPG" alt="Image 3429">
-                <img src="ressources/aspect-ratio/IMG_3428.JPG" alt="Image 3428">
-                <img src="ressources/aspect-ratio/IMG_3427.JPG" alt="Image 3427">
-
+                <img src="ressources/aspect-ratio/IMG_3449.JPG" alt="Image 3449" loading="lazy">
+                <img src="ressources/aspect-ratio/IMG_3448.JPG" alt="Image 3448" loading="lazy">
+                <img src="ressources/aspect-ratio/IMG_3447.JPG" alt="Image 3447" loading="lazy">
+                <img src="ressources/aspect-ratio/IMG_3446.JPG" alt="Image 3446" loading="lazy">
+                <img src="ressources/aspect-ratio/IMG_3444.JPG" alt="Image 3444" loading="lazy">
+                <img src="ressources/aspect-ratio/IMG_3443.JPG" alt="Image 3443" loading="lazy">
+                <img src="ressources/aspect-ratio/IMG_3442.JPG" alt="Image 3442" loading="lazy">
+                <img src="ressources/aspect-ratio/IMG_3441.JPG" alt="Image 3441" loading="lazy">
+                <img src="ressources/aspect-ratio/IMG_3440.JPG" alt="Image 3440" loading="lazy">
+                <img src="ressources/aspect-ratio/IMG_3439.JPG" alt="Image 3439" loading="lazy">
+                <img src="ressources/aspect-ratio/IMG_3437.JPG" alt="Image 3437" loading="lazy">
+                <img src="ressources/aspect-ratio/IMG_3436.JPG" alt="Image 3436" loading="lazy">
+                <img src="ressources/aspect-ratio/IMG_3435.JPG" alt="Image 3435" loading="lazy">
+                <img src="ressources/aspect-ratio/IMG_3434.JPG" alt="Image 3434" loading="lazy">
+                <img src="ressources/aspect-ratio/IMG_3433.JPG" alt="Image 3433" loading="lazy">
+                <img src="ressources/aspect-ratio/IMG_3432.JPG" alt="Image 3432" loading="lazy">
+                <img src="ressources/aspect-ratio/IMG_3430.JPG" alt="Image 3430" loading="lazy">
+                <img src="ressources/aspect-ratio/IMG_3429.JPG" alt="Image 3429" loading="lazy">
+                <img src="ressources/aspect-ratio/IMG_3428.JPG" alt="Image 3428" loading="lazy">
+                <img src="ressources/aspect-ratio/IMG_3427.JPG" alt="Image 3427" loading="lazy">
             </div>
 
             <div class="handle right-handle">
                 <div class="text">&#8250;</div>
             </div>
-        </section>
+        </div>
 
         <div id="progress-bar"></div>
     </section>
 
     <div id="image-viewer" class="invisible">
         <img id="large-image" src="" alt="Large Image">
-        <button id="close-button">Fermer</button>
+        <button id="close-button">✕ Fermer</button>
     </div>
 
-    <section class="teammaker">
-        <div class="header">
-            <h3 id="teammaker-header">Composition équipes</h3>
-        </div>
+    <section class="teammaker" id="teammaker">
+        <div class="section-inner">
+            <div class="section-header">
+                <h2>Composer les équipes</h2>
+            </div>
 
-        <form>
-            <label>
-                <textarea placeholder="Veuillez entrer les noms des compétiteurs ligne par ligne"></textarea>
-            </label>
+            <form>
+                <label>
+                    <textarea placeholder="Entrez les noms des compétiteurs, un par ligne"></textarea>
+                </label>
+                <label>
+                    <input id="submit-form" type="submit" value="Tirer au sort" />
+                </label>
+            </form>
 
-            <label>
-                <input id="submit-form" type="submit" value="Valider" />
-            </label>
-        </form>
-
-        <div id="create-team">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
+            <div id="create-team" class="invisible">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
         </div>
     </section>
 </body>
