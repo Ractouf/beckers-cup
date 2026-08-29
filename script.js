@@ -7,6 +7,67 @@ const closeButton = document.querySelector("#close-button");
 const form = document.querySelector("form");
 const selectElement = document.querySelector("select");
 const teamsScores = document.querySelector("#teams-scores");
+const teams2026 = [
+    {
+        "?": {
+            membres: [
+                "Stéphanie",
+                "Lucia",
+                "Jean-Phillipe",
+                "Vincent"
+            ],
+            scores: [
+            ],
+            indexes: [
+                4
+            ]
+        }
+    },
+    {
+        "?": {
+            membres: [
+                "Kenza",
+                "Françoise",
+                "Robin",
+                "Maeva"
+            ],
+            scores: [
+            ],
+            indexes: [
+                5
+            ]
+        }
+    },
+    {
+        "?": {
+            membres: [
+                "Brieuc",
+                "Emma",
+                "François",
+                "Marine"
+            ],
+            scores: [
+            ],
+            indexes: [
+                6
+            ]
+        }
+    },
+    {
+        "sixseven": {
+            membres: [
+                "Lucie",
+                "Pierre",
+                "Cédric"
+            ],
+            scores: [
+            ],
+            indexes: [
+                7
+            ]
+        }
+    },
+];
 const teams2025 = [
     {
         "Pantofels": {
@@ -543,7 +604,9 @@ function chooseTournament() {
     tournoi.innerHTML = tournoiEmpty;
     teamsScores.innerHTML = "";
 
-    if (selectedOption === '2025') {
+    if (selectedOption === '2026') {
+        displayResult(teams2026);
+    } else if (selectedOption === '2025') {
         displayResult(teams2025);
     } else if (selectedOption === '2024') {
         displayResult(teams2024);
