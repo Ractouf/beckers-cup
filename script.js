@@ -39,7 +39,7 @@ const teams2026 = [
         }
     },
     {
-        "?": {
+        "wrecking boule": {
             membres: [
                 "Brieuc",
                 "Emma",
