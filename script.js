@@ -9,7 +9,7 @@ const selectElement = document.querySelector("select");
 const teamsScores = document.querySelector("#teams-scores");
 const teams2026 = [
     {
-        "?": {
+        "Le bois dormant": {
             membres: [
                 "Stéphanie",
                 "Lucia",
@@ -24,7 +24,7 @@ const teams2026 = [
         }
     },
     {
-        "?": {
+        "Les Princesses": {
             membres: [
                 "Kenza",
                 "Françoise",
@@ -47,9 +47,11 @@ const teams2026 = [
                 "Marine"
             ],
             scores: [
+                0
             ],
             indexes: [
-                6
+                6,
+                2
             ]
         }
     },
@@ -61,9 +63,11 @@ const teams2026 = [
                 "Cédric"
             ],
             scores: [
+                7
             ],
             indexes: [
-                7
+                7,
+                0
             ]
         }
     },
